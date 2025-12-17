@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="Portfolio de Nadal NGAKI MUPATI, etudiant sciences pour l'ingénieur" name="description">
+        <meta name="keywords" content =  "étudiant, ingénieur, scinces pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
+        <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
+        <meta name="author" content="Nadal NGAKI MUPATI">
+        <title>Portfolio de Nadal NGAKI MUPATI</title>
+        <link rel="stylesheet" href="site_web.css">
+        <script src="site_web.js" defer></script>
+    </head>
+    <body>
+        <!--la page en intégralité-->
+        <div class="integralite">
+            <!--en tete de la page-->
+            <header>
+                <div style="display:flex; gap:16px; align-items: center;">
+                <nav>
+                        <ul>
+                            <li><a href="index.html" data-i18n="nav.presentation">Présentation</a></li>
+                            <li><a href="competence.html" data-i18n="nav.competences">Compétences</a></li>
+                            <li><a href="index.html" data-i18n="nav.parcours">Parcours</a></li>
+                            <li><a href="projets.html" data-i18n="nav.projets">Projets</a></li>
+                            <li><a href="centre_interet.html" data-i18n="nav.centre">Centre d'intérêt</a></li>
+                            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                </nav> 
+                </div>
+
+                <div class="langs">
+                    <button id="ln-fr" title="FR">FR</button>
+                    <button id="ln-en" title="EN">EN</button>
+                    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
+                </div>
+            </header>
+
+            <!--le contenu ou le corps de la page-->
+            <main>
+
+                <h2 data-i18n="interests.title.page">Centres d'intérêt</h2>
+                <p class="lead" data-i18n="interests.lead">Ce que j'aime faire pendant mon temps libre — passions et activités qui m'inspirent et complètent mon profil d'ingénieur.</p>
+
+                <section class="grid" aria-label="Liste de centres d'intérêt">
+                    <article class="interest-card">
+                    <div class="icon">⚽</div>
+                    <h3 data-i18n="interest.football">Football</h3>
+                    <div class="muted" data-i18n="interest.football.desc">Supporter du FC Barcelone — jeu collectif, entraînements et analyse tactique.</div>
+                    <div class="tags"><span class="tag">Matchs</span><span class="tag">Analyse</span><span class="tag">Entraînement</span></div>
+                    </article>
+
+                    <article class="interest-card">
+                    <div class="icon">🎧</div>
+                    <h3 data-i18n="interest.music">Musique</h3>
+                    <div class="muted" data-i18n="interest.music.desc">Écoute variée — détente, concentration en travaillant, découverte d'artistes.</div>
+                    <div class="tags"><span class="tag">Playlist</span><span class="tag">Découverte</span></div>
+                    </article>
+
+
+                    <article class="interest-card">
+                    <div class="icon">📚</div>
+                    <h3 data-i18n="interest.reading">Lecture</h3>
+                    <div class="muted" data-i18n="interest.reading">Livres techniques et fiction — amélioration continue et imagination.</div>
+                    <div class="tags"><span class="tag">Tech</span><span class="tag">Fiction</span></div>
+                    </article>
+
+
+                    <article class="interest-card">
+                    <div class="icon">💻</div>
+                    <h3 data-i18n="interest.programming">Technologie & Dev</h3>
+                    <div class="muted" data-i18n="interest.tech.desc">Projets perso, veille technologique, prototypage hardware & software.</div>
+                    <div class="tags"><span class="tag">Arduino</span><span class="tag">Python</span><span class="tag">Prototypage</span></div>
+                    </article>
+
+
+                    <article class="interest-card">
+                    <div class="icon">🧭</div>
+                    <h3 data-i18n="interest.travel">Voyages</h3>
+                    <div class="muted" data-i18n="interest.travel.desc">Découvrir de nouveaux lieux, cultures, et sources d'inspiration pour mes projets.</div>
+                    <div class="tags"><span class="tag">Culture</span><span class="tag">Photos</span></div>
+                    </article>
+
+
+                    <article class="interest-card">
+                    <div class="icon">🔧</div>
+                    <h3 data-i18n="interest.diy">Bricolage & Maker</h3>
+                    <div class="muted" data-i18n="interest.diy.desc">Conception mécanique, soudure, montage électronique — j'apprends en faisant.</div>
+                    <div class="tags"><span class="tag">SolidWorks</span><span class="tag">PCB</span></div>
+                    </article>
+                </section>
+
+
+                <section style="margin-top:22px">
+                <h3 style="margin:0 0 10px 0;color:var(--accent)">Galerie & preuves</h3>
+                <p class="muted">Ajoute ici des photos ou des miniatures de projets, voyages ou entraînements pour illustrer chaque centre d'intérêt.</p>
+                <div class="gallery">
+                <div class="photo"><img src="images/lionnel_messi.jpg" alt="photo de messi"></div>
+                <div class="photo"><img src="images/Sydney_Australia.jpg" alt="photo de sydney"></div>
+                <div class="photo"><img src="images/michael_jordan.jpg" alt="photo de joradn"></div>
+                <div class="photo"><img src="images/lecture.jpg" alt="photo de lecture"></div>
+                </div>
+                </section>
+            </main>
+
+            <!--pied de page-->
+            <footer class="footer">
+                <div class="footer-content">
+                    
+                    <div class="footer-items">
+                        <h3>FOLLOW ME</h3>
+                        <a href="https://github.com/ton-pseudo" target="_blank" title="GitHub">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ton-profil" target="_blank" title="LinkedIn">LinkedIn</a>
+                    </div>
+                    <div class="footer-items">
+                        <h3>ADRESSE</h3>
+                        <p>91360 Epinay sur orge, France</p>
+                    </div>
+
+                    <div class="footer-items">
+                        <h3>Email</h3>
+                        <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
+                    </div>
+                    <div class="footer-items">
+                        <h3>Téléphone</h3>
+                        <p>+33 766932319</p>
+                    </div>
+
+                </div>
+                <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
+            </footer>
+    </div>
+</html>
+

@@ -1,0 +1,481 @@
+<!DOCTYPE html> 
+<html lang="fr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Portfolio de Nadal NGAKI MUPATI, étudiant sciences pour l'ingénieur" name="description">
+    <meta name="keywords" content="étudiant, ingénieur, sciences pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
+    <meta name="author" content="Nadal NGAKI MUPATI">
+    <title>Portfolio de Nadal NGAKI MUPATI</title>
+    <link rel="stylesheet" href="site_web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="site_web.js" defer></script> 
+  </head>
+  <body>
+    <div class="integralite">
+      <header>
+        <div style="display: flex; gap: 16px; align-items: center">
+          <nav>
+            <ul>
+              <li><a href="index.html" data-i18n="nav.presentation">Présentation</a></li>
+              <li><a href="competence.html" data-i18n="nav.competences">Compétences</a></li>
+              <li><a href="index.html" data-i18n="nav.parcours">Parcours</a></li>
+              <li><a href="projets.html" data-i18n="nav.projets">Projets</a></li>
+              <li><a href="centre_interet.html" data-i18n="nav.centre">Centre d'intérêt</a></li>
+              <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="langs">
+          <button id="ln-fr" title="FR">FR</button>
+          <button id="ln-en" title="EN">EN</button>
+          <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
+        </div>
+      </header>
+      <p style="margin: 0px auto; max-width: 1200px; padding: 24px;" data-i18n="competence.intro">
+        À travers mon parcours, j'ai développé un ensemble de compétences variées qui reflètent à la fois ma polyvalence et ma capacité d'adaptation. 
+        Mes savoir-faire techniques (programmation, conception, électronique, web), mes compétences linguistiques (français, lingala, anglais) ainsi que mes qualités humaines (autonomie, esprit d'équipe, dynamisme) 
+        me permettent de mener à bien des projets diversifiés et de collaborer efficacement dans différents contextes. 
+        Cette combinaison de connaissances et d'expériences constitue une véritable valeur ajoutée que je mets au service de chaque mission.
+        </p>
+
+      <main class="skills">
+        
+    <h2 data-i18n="competence.tech.title" style="text-align: center;">Mes compétences techniques</h2>
+
+    <section class="grid">
+        <article class="card" onclick="openModal('modal-python')" style="cursor: pointer;">
+            <i class="fab fa-python" style="font-size: 36px; color: #3776AB; margin-bottom: 10px;"></i>
+            <h3>Python</h3>
+            <div class="muted">Tkinter, gestion des fichiers, boucles, petite apps. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:60%"></span></div>
+            <div class="tag">Débutant</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-C')" style="cursor: pointer;">
+            <i class="fas fa-terminal" style="font-size: 36px; color: #555; margin-bottom: 10px; "></i>
+            <h3>C</h3>
+            <div class="muted">Programmation bas-niveau, gestion mémoire, algorithmes. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:55%"></span></div>
+            <div class="tag">Débutant</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-html')" style="cursor: pointer;">
+            <i class="fab fa-html5" style="font-size: 36px; color: #E34F26; margin-bottom: 10px;"></i>
+            <h3>HTML</h3>
+            <div class="muted">Structure des pages web, sémantique, accessibilité. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:70%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-css')" style="cursor: pointer;">
+            <i class="fab fa-css3-alt" style="font-size: 36px; color: #1572B6; margin-bottom: 10px;"></i>
+            <h3>CSS</h3>
+            <div class="muted">Stylisation web, mise en page responsive, animations. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:70%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-javascript')" style="cursor: pointer;">
+            <i class="fab fa-js" style="font-size: 36px; color: #F7DF1E; margin-bottom: 10px;"></i>
+            <h3>JavaScript</h3>
+            <div class="muted">Front-end, interactions DOM, outils web. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:65%"></span></div>
+            <div class="tag">Débutant</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-php')" style="cursor: pointer;">
+            <i class="fab fa-php" style="font-size: 36px; color: #777BB4; margin-bottom: 10px;"></i>
+            <h3>PHP</h3>
+            <div class="muted">Notions — back-end basique, formulaires, interaction serveur. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:40%"></span></div>
+            <div class="tag">Débutant</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-arduino')" style="cursor: pointer;">
+            <i class="fas fa-microchip" style="font-size: 36px; color: #00979D; margin-bottom: 10px;"></i>
+            <h3>Arduino</h3>
+            <div class="muted">Programmation embarquée, capteurs, moteurs, prototypage. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:65%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-montage_et_cablage')" style="cursor: pointer;">
+            <i class="fas fa-wrench" style="font-size: 36px; color: #AA00FF; margin-bottom: 10px;"></i>
+            <h3>Montage & câblage</h3>
+            <div class="muted">Soudure, schémas, breadboard et PCB simples. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:70%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+
+        <article class="card" onclick="openModal('modal-CAO')" style="cursor: pointer;">
+            <i class="fas fa-cube" style="font-size: 36px; color: #FF6600; margin-bottom: 10px;"></i>
+            <h3>CAO — SolidWorks</h3>
+            <div class="muted">Conception mécanique, assemblages, plans techniques. <em>cliquez pour en savoir plus</em></div>
+            <div class="meter"><span style="width:63%"></span></div>
+            <div class="tag">Débutant</div>
+        </article>
+    </section>
+
+    <h2 data-i18n="competence.transversal.title" style="text-align: center";>Mes compétences transversales</h2>
+
+    <section class="grid">
+        <article class="card">
+            <i class="far fa-file-word" style="font-size: 36px; color: #2B579A; margin-bottom: 10px;"></i>
+            <h3>Word</h3>
+            <div class="muted">Mise en page, rédaction de documents, création de modèles, gestion des styles</div>
+            <div class="meter"><span style="width:90%"></span></div>
+            <div class="tag">Maîtrise</div>
+        </article>
+
+        <article class="card">
+            <i class="far fa-file-excel" style="font-size: 36px; color: #0E7238; margin-bottom: 10px;"></i>
+            <h3>Excel</h3>
+            <div class="muted">Tableaux, formules, graphiques, tableaux croisés dynamiques</div>
+            <div class="meter"><span style="width:65%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+
+        <article class="card">
+            <i class="far fa-file-powerpoint" style="font-size: 36px; color: #B7472A; margin-bottom: 10px;"></i>
+            <h3>PowerPoint</h3>
+            <div class="muted">Conception de présentations, animations, communication visuelle</div>
+            <div class="meter"><span style="width:70%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-code" style="font-size: 36px; color: #000; margin-bottom: 10px;"></i>
+            <h3>LaTeX</h3>
+            <div class="muted">Rédaction scientifique, gestion des références, mise en page avancée</div>
+            <div class="meter"><span style="width:50%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+    </section>
+
+    <h2 data-i18n="competence.languages.title" style="text-align: center";>Mes compétences linguistiques</h2>
+
+    <section class="grid">
+        <article class="card">
+            <i class="fas fa-flag" style="font-size: 36px; color: #0055A4; margin-bottom: 10px;"></i>
+            <h3>Français</h3>
+            <div class="muted">Langue maternelle, aisance dans la communication quotidienne et professionnelle</div>
+            <div class="meter"><span style="width:95%"></span></div>
+            <div class="tag">Maîtrise</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-flag" style="font-size: 36px; color: #009933; margin-bottom: 10px;"></i>
+            <h3>Lingala</h3>
+            <div class="muted">Langue maternelle, excellent dans la communication écrite et orale</div>
+            <div class="meter"><span style="width:90%"></span></div>
+            <div class="tag">Maîtrise</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-globe" style="font-size: 36px; color: #CC0000; margin-bottom: 10px;"></i>
+            <h3>Anglais</h3>
+            <div class="muted">Niveau intermédiaire : parler sans expressions complexes, écrire et comprendre à l’écoute</div>
+            <div class="meter"><span style="width:60%"></span></div>
+            <div class="tag">Intermédiaire</div>
+        </article>
+    </section>
+
+    <h2 data-i18n="competence.human.title" style="text-align: center";>Mes compétences humaines</h2>
+
+    <section class="grid">
+        <article class="card">
+            <i class="fas fa-user-circle" style="font-size: 36px; color: #663399; margin-bottom: 10px;"></i>
+            <h3>Autonomie</h3>
+            <div class="muted">Capacité à travailler efficacement sans supervision constante</div>
+            <div class="meter"><span style="width:90%"></span></div>
+            <div class="tag">Maîtrise</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-users" style="font-size: 36px; color: #FFA500; margin-bottom: 10px;"></i>
+            <h3>Esprit d'équipe</h3>
+            <div class="muted">Collaboration, communication et respect dans un cadre collectif</div>
+            <div class="meter"><span style="width:85%"></span></div>
+            <div class="tag">Bon niveau</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-bolt" style="font-size: 36px; color: #FFD700; margin-bottom: 10px;"></i>
+            <h3>Dynamisme</h3>
+            <div class="muted">Énergie, motivation et proactivité dans les projets</div>
+            <div class="meter"><span style="width:80%"></span></div>
+            <div class="tag">Bon niveau</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-sync-alt" style="font-size: 36px; color: #20B2AA; margin-bottom: 10px;"></i>
+            <h3>Adaptabilité</h3>
+            <div class="muted">Flexibilité face aux changements et nouvelles situations</div>
+            <div class="meter"><span style="width:75%"></span></div>
+            <div class="tag">Bon niveau</div>
+        </article>
+
+        <article class="card">
+            <i class="fas fa-th" style="font-size: 36px; color: #4169E1; margin-bottom: 10px;"></i>
+            <h3>Polyvalence</h3>
+            <div class="muted">Capacité à assumer différentes tâches et responsabilités</div>
+            <div class="meter"><span style="width:70%"></span></div>
+            <div class="tag">Bon niveau</div>
+        </article>
+    </section>
+
+    </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-items">
+            <h3>FOLLOW ME</h3>
+            <a href="https://github.com/ton-pseudo" target="_blank" title="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/ton-profil" target="_blank" title="LinkedIn">LinkedIn</a>
+          </div>
+          <div class="footer-items">
+            <h3>ADRESSE</h3>
+            <p>91360 Epinay sur Orge, France</p>
+          </div>
+
+          <div class="footer-items">
+            <h3>Email</h3>
+            <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
+          </div>
+          <div class="footer-items">
+            <h3>Téléphone</h3>
+            <p>+33 766932319</p>
+          </div>
+        </div>
+        <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits réservés.</p></center>
+      </footer>
+    </div>
+    
+
+    <div id="modal-python" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-python')">&times;</span>
+        <h2 style="color: #37a9ab;">Python</h2>
+        <p><strong>Niveau :</strong>Débutant</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Maîtrise des notions fondamentales de Python : variables, types de données (entiers, flottants, chaînes, booléens), 
+          structures de données (listes, tuples, dictionnaires, ensembles), 
+          opérations sur les chaînes, boucles et conditions, gestion des exceptions et fichiers CSV. 
+          Expérience pratique dans le traitement d’images et le développement d’applications interactives avec Tkinter.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Librairies</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Tkinter (pour les interfaces graphiques)</li>
+            <li>NumPy et Pandas (pour l'analyse de données)</li>
+            <li>OpenCV (pour le traitement d'images)</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Application de similation d'un distributeur bancaire</li>
+            <li>Jeu Eco-Geurrier : Deplacement des entités</li>
+            <li>Application VideoSurveillance : Dectecteur de mouvement</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Certification</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li><a href="https://openbadgefactory.com/v1/assertion/1e73a324eba5f9083977c6c28a57048961dadb20">Python : des fondamentaux aux concepts avancés du langage</a></li>
+      </div>
+    </div>
+
+      <div id="modal-C" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-C')">&times;</span>
+        <h2 style="color: #3776AB;">C</h2>
+        <p><strong>Niveau :</strong>Débutant</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Maîtrise des notions fondamentales du langage C : variables, types de données (int, float, char, bool), tableaux, pointeurs, structures, conditions et boucles (if, switch, for, while), fonctions et gestion des fichiers. 
+          Bonne connaissance des structures de données (listes chaînées, piles, files, arbres) et de la gestion dynamique de la mémoire (allocation et libération avec malloc, calloc, free). 
+          Expérience pratique dans le développement de programmes modulaires.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Librairies</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>stdio.h : entrées/sorties (printf, scanf, fichiers, etc.)</li>
+            <li>math.h : fonctions mathématiques (sqrt, pow, sin, cos…)</li>
+            <li>stdlib.h : fonctions utilitaires (malloc, free, exit, conversions, etc.)</li>
+            <li>ctype.h : fonctions pour manipuler les caractères (isdigit, isalpha…)</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Quelques travaux pratiques universitaires</li>
+      </div>
+    </div>
+
+    <div id="modal-html" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-html')">&times;</span>
+        <h2 style="color: #E34F26;">HTML</h2>
+        <p><strong>Niveau :</strong>Intermédiaire</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Maîtrise des balises HTML pour structurer les pages web, utilisation des éléments sémantiques pour améliorer l'accessibilité et le référencement, gestion des formulaires, liens et médias intégrés. Expérience dans la création de sites web responsives et accessibles.</p>
+        
+        <h4 style="margin-top: 15px;">Outils</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Balises sémantiques (header, nav, main, section, article, footer)</li>
+            <li>Formulaires et validation</li>
+            <li>Intégration de médias (images, vidéos, audio)</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Création de ce portfolio personnel</li>
+            <li>Sites web statiques pour des projets universitaires</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-css" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-css')">&times;</span>
+        <h2 style="color: #1572B6;">CSS</h2>
+        <p><strong>Niveau :</strong>intermédiaire</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Maîtrise des styles CSS pour la mise en page, utilisation de Flexbox et Grid pour des layouts responsives, animations et transitions, gestion des media queries pour l'adaptation mobile. Expérience dans la création d'interfaces utilisateur modernes et accessibles.</p>
+        
+        <h4 style="margin-top: 15px;">Outils</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Flexbox et CSS Grid</li>
+            <li>Animations et transitions</li>
+            <li>Media queries pour responsive design</li>
+            <li>Préprocesseurs CSS (notions de base)</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Stylisation complète de ce portfolio</li>
+            <li>Interfaces responsives pour applications web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-javascript" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-javascript')">&times;</span>
+        <h2 style="color: #F7DF1E;">JavaScript</h2>
+        <p><strong>Niveau :</strong>Débutant</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Bonne maîtrise des bases de JavaScript : variables, fonctions, objets, événements DOM, manipulation des éléments HTML. Utilisation pour ajouter de l'interactivité aux pages web.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Librairies</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>DOM manipulation (querySelector, addEventListener)</li>
+            <li>Fetch API pour les requêtes HTTP</li>
+            <li>ES6+ features (arrow functions, destructuring)</li>
+            <li>jQuery (notions)</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Scripts pour l'interactivité de ce site (modals, formulaires)</li>
+            <li>Quelques travaux pratiques universitaires</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-php" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-php')">&times;</span>
+        <h2 style="color: #777BB4;">PHP</h2>
+        <p><strong>Niveau :</strong>Débutant</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Notions de base en PHP : syntaxe, variables, boucles, conditions, gestion des formulaires et interaction avec bases de données MySQL. Utilisation pour le développement back-end simple et traitement de données côté serveur.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Librairies</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>PDO pour la connexion aux bases de données</li>
+            <li>Gestion des sessions et cookies</li>
+            <li>Formulaires et validation côté serveur</li>
+            <li>Inclusion de fichiers (include, require)</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Formulaires de contact avec traitement PHP</li>
+            <li>Petites applications web avec base de données</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-arduino" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-arduino')">&times;</span>
+        <h2 style="color: #00979D;">Arduino</h2>
+        <p><strong>Niveau :</strong>Intermédiaire</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Maîtrise de la programmation embarquée avec Arduino : contrôle de capteurs, moteurs, LEDs, écrans LCD. Expérience dans le prototypage de systèmes électroniques simples, gestion des entrées/sorties analogiques et numériques, et intégration avec d'autres composants.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Librairies</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Bibliothèques Arduino standard (Servo, LiquidCrystal)</li>
+            <li>Capteurs (température, ultrason, infrarouge)</li>
+            <li>Moteurs et actionneurs</li>
+            <li>Communication série et I2C</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Allumage d'une led avec des intervalles de temps précis</li>
+            <li>Station météo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-montage_et_cablage" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-montage_et_cablage')">&times;</span>
+        <h2 style="color: #AA00FF;">Montage & câblage</h2>
+        <p><strong>Niveau :</strong>Intermédiaire</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Maîtrise des techniques d'usinage, câblage de circuits électroniques, utilisation de breadboards et PCBs simples. Expérience dans l'assemblage de composants électroniques et la réalisation de prototypes fonctionnels.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Procédés de Fabrication</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li></li>
+            <li>Multimètres et oscilloscopes</li>
+            <li>Breadboards et plaques de prototypage</li>
+            <li>Outils de découpe et de stripping</li>
+            <li>Fabrication par Tournage, fraisage, perçage etc.</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Montage de circuits pour projets Arduino</li>
+            <li>Réalisation des circuits lors des travaux ptratiques du module d'électronique à l'université</li>
+            <li>Réparation et assemblage d'appareils électroniques</li>
+            <li>Montage et Cablâge de l'afficheur 7 segements</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-CAO" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-CAO')">&times;</span>
+        <h2 style="color: #FF6600;">CAO - SolidWorks</h2>
+        <p><strong>Niveau :</strong>Débutant</p>
+        
+        <h4 style="margin-top: 15px;">Mon Expérience et Maîtrise</h4>
+        <p style="text-align: justify;">Bonne maîtrise de SolidWorks pour la conception mécanique 3D : modélisation de pièces, assemblages, génération de plans techniques. Utilisation pour la simulation et l'analyse de structures.</p>
+        
+        <h4 style="margin-top: 15px;">Outils et Librairies</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Modélisation 3D et esquisses</li>
+            <li>Assemblages et contraintes</li>
+            <li>Génération de plans 2D</li>
+            <li>Simulation statique et dynamique</li>
+        </ul>
+        <h4 style="margin-top: 15px;">Projets réalisés</h4>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Conception de pièces mécaniques pour vélos elliptiques</li>
+            <li>Modèles 3D pour projets d'usinage</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

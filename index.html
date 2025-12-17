@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Portfolio de Nadal NGAKI MUPATI, etudiant sciences pour l'ingénieur" name="description">
+    <meta name="keywords" content =  "étudiant, ingénieur, scinces pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
+    <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
+    <meta name="author" content="Nadal NGAKI MUPATI">
+    <title>Portfolio de Nadal NGAKI MUPATI</title>
+    <link rel="stylesheet" href="site_web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="site_web.js" defer></script>
+
+</head>
+<body>
+    <!--la page en intégralité-->
+    <div class="integralite">
+        <!--en tete de la page-->
+        <header>
+            <div style="display:flex; gap:16px; align-items: center;">
+               <nav>
+                    <ul class="menu">
+                        <li><a href="index.html" data-i18n="nav.presentation" target="_blank">Présentation</a></li>
+                        <li><a href="competence.html" data-i18n="nav.competences" >Compétences</a></li>
+                        <li><a href="#parcours" data-i18n="nav.parcours">Parcours</a></li>
+                        <li><a href="projets.html" data-i18n="nav.projets" target="_blank">Projets</a></li>
+                        <li><a href="centre_interet.html" data-i18n="nav.centre" target="_blank">Centre d'intérêt</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact" target="_blank">Contact</a></li>
+                    </ul>
+               </nav> 
+            </div>
+
+            
+
+                <div class="langs">
+                    <button id="ln-fr" title="FR">FR</button>
+                    <button id="ln-en" title="EN">EN</button>
+                    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
+                </div>
+        </header>
+
+        <!--le contenu ou le corps de la page-->
+        <main class="corps">
+            <div class="arriere_plan">
+                <div class="intro-section">
+                    <div class="presentation">
+                        <h1 class="mon_nom"><span>Nadal</span> <span>NGAKI</span> <span>MUPATI</span> </h1> 
+                        <h3 class="description" data-i18n="desc.intro">Etudiant en deuxième année de licence Sciences pour ingénieur à l'université d'Evry Paris-saclay</h3>
+                        <h3>Je suis 
+                            <span class="typed"  style="font-weight: bold;"
+                                data-typed-items="Curieux., Passionné., Autonome., Ambitieux., Étudiant Ingénieur.">
+                            </span>
+                        </h3>
+                        <p class="objectif" data-i18n="objectif.intro">Je suis en recherche d'un stage ouvrier de 6 à 8 semaines entre avril et mai 2026</p>
+                    </div>
+                    
+                    <div class="photo-profil">
+                        <img src="images/photo_profil.JPG" alt="Photo de profil">
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;"> 
+                    <a href="cv.html" class="btn-cv">
+                        <i class="fas fa-file-lines"></i> 
+                        <span data-i18n="cv.view-text">Voir mon CV</span>
+                    </a>
+                </div>
+                
+
+
+
+                <div class="a_propos">
+                    <h3 data-i18n="about.title">À propos</h3>
+                    <p data-i18n="about.desc">Étudiant en deuxième année de Licence Sciences pour l’Ingénieur à l’Université d’Évry Paris-Saclay, je suis passionné par les technologies, l’innovation et la résolution de problèmes techniques.
+                        Je développe des compétences en programmation (Python, C/C++), avec une bonne maîtrise de bibliothèques telles que Tkinter, OpenCV, NumPy, Pandas et d’outils de développement web (HTML, CSS).
+                        J’explore également la conception mécanique avec SolidWorks, ainsi que l’électronique avec des outils de simulation et de prototypage.
+                        Curieux et motivé, je m’intéresse particulièrement aux systèmes embarqués, à l’intelligence artificielle et aux technologies émergentes. Je suis toujours ouvert à apprendre, collaborer et contribuer à des projets techniques stimulants. </p>
+                </div>
+            </div>
+            <!-- Compétences clés -->
+            <section class="competences" id="competences">
+                <h3 data-i18n="skills.title">Compétences clés</h3>
+                <div class="competences-list">
+                    <div class="competence-item" id="competence-item1">
+                        <!-- Icône code (exemple simple SVG) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4Z"/>
+                        </svg>
+                        <strong data-i18n="competence.dev.title">Développement</strong>
+                        <p data-i18n="competence.dev.desc">Python, C / C++, HTML, CSS, JavaScript et PHP</p>
+                    </div>
+                    <div class="competence-item" id="competence-item2">
+                        <!-- Icône outils -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M22 19v2H2v-2l3-2v-6l-3-2v-2h20v2l-3 2v6l3 2Zm-6-8h-4v6h4v-6Z"/>
+                        </svg>
+                        <strong data-i18n="competence.tools.title">Outils &amp; Technologies</strong>
+                        <p data-i18n="competence.tools.desc">Git, Arduino, SolidWorks, VSCode et CodeBlocks</p>
+                    </div>
+                    <div class="competence-item" id="competence-item3">
+                        <!-- Icône soft skills -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2a5 5 0 0 1 5 5 5 5 0 0 1-10 0 5 5 0 0 1 5-5Zm0 10c-5 0-9 3-9 6v2h18v-2c0-3-4-6-9-6Z"/>
+                        </svg>
+                        <strong data-i18n="competence.soft.title">Soft Skills</strong>
+                        <p data-i18n="competence.soft.desc">Travail en équipe, autonomie, résolution de problèmes</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Aperçu projets -->
+            <section class="projets-apercu">
+                <h3 data-i18n="projects.title">Aperçu de mes projets</h3>
+                <div class="projets-list">
+                    <div class="projet">
+                        <h4 data-i18n="projects.item1.title">Jeu vidéo : Eco-Geurrier</h4>
+                        <p data-i18n="projects.item1.desc">Une simulation ludique en Python avec interface Tkinter et gestion de carte maritime.</p>
+                        <a href="projets.html" data-i18n="projects.link">Voir tous les projets</a>
+                    </div>
+                    <div class="projet">
+                        <h4 data-i18n="projects.item2.title">Réalisation d'une pièce par tournage (Usinage)</h4>
+                        <p data-i18n="projects.item2.desc">Conception de tmodéliation de la bielle (une pièces d'un vélo elliptique) et assemblage dans le système globale du vélo elliptique.</p>
+                        <a href="projets.html" data-i18n="projects.link">Voir tous les projets</a>
+                    </div>
+                </div>
+            </section>
+
+        
+            <!-- Parcours scolaire -->
+            <section class="timeline" id="parcours">
+                <h3 data-i18n="timeline.education">Educations</h3>
+                <div class="timeline-item" data-i18n="timeline.item1">
+                    <strong>2023 :</strong> Baccalauréat Scientifique – Spécialité Math-Physique avec Mention Bien - Lycée Sadisana
+                </div>
+
+                <div class="timeline-item" data-i18n="timeline.item2">
+                    <strong>2024 – 2027 :</strong>Licence en Sciences pour l’Ingénieur – Université d’Évry Paris-Saclay <br>
+                    <strong>cours principaux :</strong> Mathématiques, Physique, Informatique, Électronique, Mécanique, Automatisme, circuit numérique, composants électriques, etc.
+                </div>
+
+                <div class="timeline-item" data-i18n="timeline.item3">
+                    <strong>2025 (prévu) :</strong> Stage ouvrier de 6 à 8 semaines
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="timeline">
+                <h3 data-i18n="certifications.title">Certifications</h3>
+                <div class="timeline-item" data-i18n="certifications.item1">Python : des fondamentaux aux concepts avancés du langage (2025)</div>
+                <div class="timeline-item" data-i18n="certifications.item2">PIX : usage numérique (2026)</div>
+            </section>
+
+            <!-- Pourquoi moi -->
+            <section class="pourquoi-moi">
+                <h3 data-i18n="why.title">Pourquoi moi ?</h3>
+                <ul>
+                    <li data-i18n="why.li1">Esprit d’analyse et curiosité technique</li>
+                    <li data-i18n="why.li2">Capacité à apprendre rapidement</li>
+                    <li data-i18n="why.li3">Intérêt pour les projets concrets et innovants</li>
+                    <li data-i18n="why.li4">J'aime transformer une idée en prototype</li>
+                    <li data-i18n="why.li5">Je me donne à fond sur un travail</li>
+                    <li data-i18n="why.li6">Pasionné par les sciences pour ingénieur</li>
+                    <li data-i18n="why.li7">J’adore comprendre comment les systèmes fonctionnent</li>
+                    <li data-i18n="why.li7">J'adore résoudre les problèmes techniques</li>
+                </ul>
+             </section>
+
+        </main>
+
+        <!--pied de page-->
+        <footer class="footer">
+           <div class="footer-content">
+                
+                <div class="footer-items">
+                    <h3>Follow me</h3>
+                    <a href="https://github.com/nadal243/PROJET---Programmation-informatique" target="_blank" title="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nadal-ngaki-mupati-998344322/" target="_blank" title="LinkedIn">LinkedIn</a>
+                </div>
+                <div class="footer-items">
+                    <h3>Adresse</h3>
+                    <p>91360 Epinay sur orge, France</p>
+                </div>
+
+                <div class="footer-items">
+                    <h3>Email</h3>
+                    <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
+                </div>
+                <div class="footer-items">
+                    <h3>Téléphone</h3>
+                    <p>+33 766932319</p>
+                </div>
+
+           </div>
+           <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
+        </footer>
+    </div>
+</body>
+</html>
