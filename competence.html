@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Portfolio de Nadal NGAKI MUPATI, étudiant sciences pour l'ingénieur" name="description">
     <meta name="keywords" content="étudiant, ingénieur, sciences pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
+    <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
     <meta name="author" content="Nadal NGAKI MUPATI">
     <title>Portfolio de Nadal NGAKI MUPATI</title>
     <link rel="stylesheet" href="site_web.css">
@@ -14,12 +15,14 @@
   <body>
     <div class="integralite">
       <header>
-        <div style="display: flex; gap: 16px; align-items: center">
+        <div style="display:flex; gap:16px; align-items: center;">
           <nav>
-            <ul>
+            <ul class="menu">
               <li><a href="index.html" data-i18n="nav.presentation">Présentation</a></li>
               <li><a href="competence.html" data-i18n="nav.competences">Compétences</a></li>
+              <li><a href="index.html#parcours" data-i18n="nav.parcours">Educations</a></li>
               <li><a href="projets.html" data-i18n="nav.projets">Projets</a></li>
+              <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -30,221 +33,224 @@
           <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
         </div>
       </header>
-      <p style="margin: 0px auto; max-width: 1200px; padding: 24px;" data-i18n="competence.intro">
-        À travers mon parcours, j'ai développé un ensemble de compétences variées qui reflètent à la fois ma polyvalence et ma capacité d'adaptation. 
-        Mes savoir-faire techniques (programmation, conception, électronique, web), mes compétences linguistiques (français, lingala, anglais) ainsi que mes qualités humaines (autonomie, esprit d'équipe, dynamisme) 
-        me permettent de mener à bien des projets diversifiés et de collaborer efficacement dans différents contextes. 
-        Cette combinaison de connaissances et d'expériences constitue une véritable valeur ajoutée que je mets au service de chaque mission.
-      </p>
+      <main class="skills">
+        <div style="color: #333" class="portfolio-header">
+          <h1  data-i18n="competence.title">Mes compétences</h1>
+          <p style="margin: 0px auto; max-width: 1200px;" data-i18n="competence.intro">
+          À travers mon parcours, j'ai développé un ensemble de compétences variées qui reflètent à la fois ma polyvalence et ma capacité d'adaptation. 
+          Mes savoir-faire techniques (programmation, conception, électronique, web), mes compétences linguistiques (français, lingala, anglais) ainsi que mes qualités humaines (autonomie, esprit d'équipe, dynamisme) 
+          me permettent de mener à bien des projets diversifiés et de collaborer efficacement dans différents contextes. 
+          Cette combinaison de connaissances et d'expériences constitue une véritable valeur ajoutée que je mets au service de chaque mission.
+          </p>
+        </div>
+        
+        <h2 data-i18n="competence.tech.title" style="text-align: center;">Mes compétences techniques</h2>
+        <section class="grid">
+            <article class="card" onclick="openModal('modal-python')" style="cursor: pointer;">
+                <i class="fab fa-python icon-skill" style="color: #3776AB;"></i>
+                <h3>Python</h3>
+                <div class="muted">Tkinter, gestion des fichiers, boucles, petite apps. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:40%"></span></div>
+                <div class="tag">Débutant</div>
+            </article>
 
-    <main class="skills">
-    <h2 data-i18n="competence.tech.title" style="text-align: center;">Mes compétences techniques</h2>
-    <section class="grid">
-        <article class="card" onclick="openModal('modal-python')" style="cursor: pointer;">
-            <i class="fab fa-python" style="font-size: 36px; color: #3776AB; margin-bottom: 10px;"></i>
-            <h3>Python</h3>
-            <div class="muted">Tkinter, gestion des fichiers, boucles, petite apps. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:40%"></span></div>
-            <div class="tag">Débutant</div>
-        </article>
+            <article class="card" onclick="openModal('modal-C')" style="cursor: pointer;">
+                <i class="fas fa-terminal icon-skill" style="color: #555;"></i>
+                <h3>C</h3>
+                <div class="muted">Programmation bas-niveau, gestion mémoire, algorithmes. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:40%"></span></div>
+                <div class="tag">Débutant</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-C')" style="cursor: pointer;">
-            <i class="fas fa-terminal" style="font-size: 36px; color: #555; margin-bottom: 10px; "></i>
-            <h3>C</h3>
-            <div class="muted">Programmation bas-niveau, gestion mémoire, algorithmes. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:40%"></span></div>
-            <div class="tag">Débutant</div>
-        </article>
+            <article class="card" onclick="openModal('modal-html')" style="cursor: pointer;">
+                <i class="fab fa-html5 icon-skill" style="color: #E34F26;"></i>
+                <h3>HTML</h3>
+                <div class="muted">Structure des pages web, sémantique, accessibilité. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:70%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-html')" style="cursor: pointer;">
-            <i class="fab fa-html5" style="font-size: 36px; color: #E34F26; margin-bottom: 10px;"></i>
-            <h3>HTML</h3>
-            <div class="muted">Structure des pages web, sémantique, accessibilité. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:70%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
+            <article class="card" onclick="openModal('modal-css')" style="cursor: pointer;">
+                <i class="fab fa-css3-alt icon-skill" style="color: #1572B6;"></i>
+                <h3>CSS</h3>
+                <div class="muted">Stylisation web, mise en page responsive, animations. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:70%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-css')" style="cursor: pointer;">
-            <i class="fab fa-css3-alt" style="font-size: 36px; color: #1572B6; margin-bottom: 10px;"></i>
-            <h3>CSS</h3>
-            <div class="muted">Stylisation web, mise en page responsive, animations. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:70%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
+            <article class="card" onclick="openModal('modal-javascript')" style="cursor: pointer;">
+                <i class="fab fa-js icon-skill" style="color: #F7DF1E;"></i>
+                <h3>JavaScript</h3>
+                <div class="muted">Front-end, interactions DOM, outils web. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:40%"></span></div>
+                <div class="tag">Débutant</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-javascript')" style="cursor: pointer;">
-            <i class="fab fa-js" style="font-size: 36px; color: #F7DF1E; margin-bottom: 10px;"></i>
-            <h3>JavaScript</h3>
-            <div class="muted">Front-end, interactions DOM, outils web. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:40%"></span></div>
-            <div class="tag">Débutant</div>
-        </article>
+            <article class="card" onclick="openModal('modal-php')" style="cursor: pointer;">
+                <i class="fab fa-php icon-skill" style="color: #777BB4;"></i>
+                <h3>PHP</h3>
+                <div class="muted">Notions — back-end basique, formulaires, interaction serveur. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:40%"></span></div>
+                <div class="tag">Débutant</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-php')" style="cursor: pointer;">
-            <i class="fab fa-php" style="font-size: 36px; color: #777BB4; margin-bottom: 10px;"></i>
-            <h3>PHP</h3>
-            <div class="muted">Notions — back-end basique, formulaires, interaction serveur. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:40%"></span></div>
-            <div class="tag">Débutant</div>
-        </article>
+            <article class="card" onclick="openModal('modal-arduino')" style="cursor: pointer;">
+                <i class="fas fa-microchip icon-skill" style="color: #00979D;"></i>
+                <h3>Arduino</h3>
+                <div class="muted">Programmation embarquée, capteurs, moteurs, prototypage. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:65%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-arduino')" style="cursor: pointer;">
-            <i class="fas fa-microchip" style="font-size: 36px; color: #00979D; margin-bottom: 10px;"></i>
-            <h3>Arduino</h3>
-            <div class="muted">Programmation embarquée, capteurs, moteurs, prototypage. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:65%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
+            <article class="card" onclick="openModal('modal-montage_et_cablage')" style="cursor: pointer;">
+                <i class="fas fa-wrench icon-skill" style="color: #AA00FF;"></i>
+                <h3>Montage & câblage</h3>
+                <div class="muted">Soudure, schémas, breadboard et PCB simples. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:70%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
 
-        <article class="card" onclick="openModal('modal-montage_et_cablage')" style="cursor: pointer;">
-            <i class="fas fa-wrench" style="font-size: 36px; color: #AA00FF; margin-bottom: 10px;"></i>
-            <h3>Montage & câblage</h3>
-            <div class="muted">Soudure, schémas, breadboard et PCB simples. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:70%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
+            <article class="card" onclick="openModal('modal-CAO')" style="cursor: pointer;">
+                <i class="fas fa-cube icon-skill" style="color: #FF6600;"></i>
+                <h3>CAO — SolidWorks</h3>
+                <div class="muted">Conception mécanique, assemblages, plans techniques. <em>cliquez pour en savoir plus</em></div>
+                <div class="meter"><span style="width:40%"></span></div>
+                <div class="tag">Débutant</div>
+            </article>
+        </section>
 
-        <article class="card" onclick="openModal('modal-CAO')" style="cursor: pointer;">
-            <i class="fas fa-cube" style="font-size: 36px; color: #FF6600; margin-bottom: 10px;"></i>
-            <h3>CAO — SolidWorks</h3>
-            <div class="muted">Conception mécanique, assemblages, plans techniques. <em>cliquez pour en savoir plus</em></div>
-            <div class="meter"><span style="width:40%"></span></div>
-            <div class="tag">Débutant</div>
-        </article>
-    </section>
+        <h2 data-i18n="competence.transversal.title" style="text-align: center;">Mes compétences transversales</h2>
 
-    <h2 data-i18n="competence.transversal.title" style="text-align: center";>Mes compétences transversales</h2>
+        <section class="grid">
+            <article class="card">
+                <i class="far fa-file-word icon-skill" style="color: #2B579A;"></i>
+                <h3>Word</h3>
+                <div class="muted">Mise en page, rédaction de documents, création de modèles, gestion des styles</div>
+                <div class="meter"><span style="width:90%"></span></div>
+                <div class="tag">Maîtrise</div>
+            </article>
 
-    <section class="grid">
-        <article class="card">
-            <i class="far fa-file-word" style="font-size: 36px; color: #2B579A; margin-bottom: 10px;"></i>
-            <h3>Word</h3>
-            <div class="muted">Mise en page, rédaction de documents, création de modèles, gestion des styles</div>
-            <div class="meter"><span style="width:90%"></span></div>
-            <div class="tag">Maîtrise</div>
-        </article>
+            <article class="card">
+                <i class="far fa-file-excel icon-skill" style="color: #0E7238;"></i>
+                <h3>Excel</h3>
+                <div class="muted">Tableaux, formules, graphiques, tableaux croisés dynamiques</div>
+                <div class="meter"><span style="width:65%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
 
-        <article class="card">
-            <i class="far fa-file-excel" style="font-size: 36px; color: #0E7238; margin-bottom: 10px;"></i>
-            <h3>Excel</h3>
-            <div class="muted">Tableaux, formules, graphiques, tableaux croisés dynamiques</div>
-            <div class="meter"><span style="width:65%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
+            <article class="card">
+                <i class="far fa-file-powerpoint icon-skill" style="color: #B7472A;"></i>
+                <h3>PowerPoint</h3>
+                <div class="muted">Conception de présentations, animations, communication visuelle</div>
+                <div class="meter"><span style="width:70%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
 
-        <article class="card">
-            <i class="far fa-file-powerpoint" style="font-size: 36px; color: #B7472A; margin-bottom: 10px;"></i>
-            <h3>PowerPoint</h3>
-            <div class="muted">Conception de présentations, animations, communication visuelle</div>
-            <div class="meter"><span style="width:70%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-code icon-skill" style="color: #000;"></i>
+                <h3>LaTeX</h3>
+                <div class="muted">Rédaction scientifique, gestion des références, mise en page avancée</div>
+                <div class="meter"><span style="width:50%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
+        </section>
 
-        <article class="card">
-            <i class="fas fa-code" style="font-size: 36px; color: #000; margin-bottom: 10px;"></i>
-            <h3>LaTeX</h3>
-            <div class="muted">Rédaction scientifique, gestion des références, mise en page avancée</div>
-            <div class="meter"><span style="width:50%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
-    </section>
+        <h2 data-i18n="competence.languages.title" style="text-align: center;">Mes compétences linguistiques</h2>
 
-    <h2 data-i18n="competence.languages.title" style="text-align: center";>Mes compétences linguistiques</h2>
+        <section class="grid">
+            <article class="card">
+                <i class="fas fa-flag icon-skill" style="color: #0055A4;"></i>
+                <h3>Français</h3>
+                <div class="muted">Langue maternelle, aisance dans la communication quotidienne et professionnelle</div>
+                <div class="meter"><span style="width:95%"></span></div>
+                <div class="tag">Maîtrise</div>
+            </article>
 
-    <section class="grid">
-        <article class="card">
-            <i class="fas fa-flag" style="font-size: 36px; color: #0055A4; margin-bottom: 10px;"></i>
-            <h3>Français</h3>
-            <div class="muted">Langue maternelle, aisance dans la communication quotidienne et professionnelle</div>
-            <div class="meter"><span style="width:95%"></span></div>
-            <div class="tag">Maîtrise</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-flag icon-skill" style="color: #009933;"></i>
+                <h3>Lingala</h3>
+                <div class="muted">Langue maternelle, excellent dans la communication écrite et orale</div>
+                <div class="meter"><span style="width:90%"></span></div>
+                <div class="tag">Maîtrise</div>
+            </article>
 
-        <article class="card">
-            <i class="fas fa-flag" style="font-size: 36px; color: #009933; margin-bottom: 10px;"></i>
-            <h3>Lingala</h3>
-            <div class="muted">Langue maternelle, excellent dans la communication écrite et orale</div>
-            <div class="meter"><span style="width:90%"></span></div>
-            <div class="tag">Maîtrise</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-globe icon-skill" style="color: #CC0000;"></i>
+                <h3>Anglais</h3>
+                <div class="muted">Niveau intermédiaire : parler sans expressions complexes, écrire et comprendre à l’écoute</div>
+                <div class="meter"><span style="width:47%"></span></div>
+                <div class="tag">Intermédiaire</div>
+            </article>
+        </section>
 
-        <article class="card">
-            <i class="fas fa-globe" style="font-size: 36px; color: #CC0000; margin-bottom: 10px;"></i>
-            <h3>Anglais</h3>
-            <div class="muted">Niveau intermédiaire : parler sans expressions complexes, écrire et comprendre à l’écoute</div>
-            <div class="meter"><span style="width:47%"></span></div>
-            <div class="tag">Intermédiaire</div>
-        </article>
-    </section>
+        <h2 data-i18n="competence.human.title" style="text-align: center;">Mes qualités humaines</h2>
 
-    <h2 data-i18n="competence.human.title" style="text-align: center";>Mes qualités humaines</h2>
+        <section class="grid">
+            <article class="card">
+                <i class="fas fa-user-circle icon-skill" style="color: #663399;"></i>
+                <h3>Autonomie</h3>
+                <div class="muted">Capacité à travailler efficacement sans supervision constante</div>
+                <div class="meter"><span style="width:90%"></span></div>
+                <div class="tag">Maîtrise</div>
+            </article>
 
-    <section class="grid">
-        <article class="card">
-            <i class="fas fa-user-circle" style="font-size: 36px; color: #663399; margin-bottom: 10px;"></i>
-            <h3>Autonomie</h3>
-            <div class="muted">Capacité à travailler efficacement sans supervision constante</div>
-            <div class="meter"><span style="width:90%"></span></div>
-            <div class="tag">Maîtrise</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-users icon-skill" style="color: #FFA500;"></i>
+                <h3>Esprit d'équipe</h3>
+                <div class="muted">Collaboration, communication et respect dans un cadre collectif</div>
+                <div class="meter"><span style="width:85%"></span></div>
+                <div class="tag">Bon niveau</div>
+            </article>
 
-        <article class="card">
-            <i class="fas fa-users" style="font-size: 36px; color: #FFA500; margin-bottom: 10px;"></i>
-            <h3>Esprit d'équipe</h3>
-            <div class="muted">Collaboration, communication et respect dans un cadre collectif</div>
-            <div class="meter"><span style="width:85%"></span></div>
-            <div class="tag">Bon niveau</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-bolt icon-skill" style="color: #FFD700;"></i>
+                <h3>Dynamisme</h3>
+                <div class="muted">Énergie, motivation et proactivité dans les projets</div>
+                <div class="meter"><span style="width:80%"></span></div>
+                <div class="tag">Bon niveau</div>
+            </article>
 
-        <article class="card">
-            <i class="fas fa-bolt" style="font-size: 36px; color: #FFD700; margin-bottom: 10px;"></i>
-            <h3>Dynamisme</h3>
-            <div class="muted">Énergie, motivation et proactivité dans les projets</div>
-            <div class="meter"><span style="width:80%"></span></div>
-            <div class="tag">Bon niveau</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-sync-alt icon-skill" style="color: #20B2AA;"></i>
+                <h3>Adaptabilité</h3>
+                <div class="muted">Flexibilité face aux changements et nouvelles situations</div>
+                <div class="meter"><span style="width:75%"></span></div>
+                <div class="tag">Bon niveau</div>
+            </article>
 
-        <article class="card">
-            <i class="fas fa-sync-alt" style="font-size: 36px; color: #20B2AA; margin-bottom: 10px;"></i>
-            <h3>Adaptabilité</h3>
-            <div class="muted">Flexibilité face aux changements et nouvelles situations</div>
-            <div class="meter"><span style="width:75%"></span></div>
-            <div class="tag">Bon niveau</div>
-        </article>
+            <article class="card">
+                <i class="fas fa-th icon-skill" style="color: #4169E1;"></i>
+                <h3>Polyvalence</h3>
+                <div class="muted">Capacité à assumer différentes tâches et responsabilités</div>
+                <div class="meter"><span style="width:70%"></span></div>
+                <div class="tag">Bon niveau</div>
+            </article>
+        </section>
 
-        <article class="card">
-            <i class="fas fa-th" style="font-size: 36px; color: #4169E1; margin-bottom: 10px;"></i>
-            <h3>Polyvalence</h3>
-            <div class="muted">Capacité à assumer différentes tâches et responsabilités</div>
-            <div class="meter"><span style="width:70%"></span></div>
-            <div class="tag">Bon niveau</div>
-        </article>
-    </section>
-
-    </main>
+      </main>
 
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-items">
-            <h3>FOLLOW ME</h3>
-            <a href="https://github.com/ton-pseudo" target="_blank" title="GitHub">GitHub</a>
-            <a href="https://www.linkedin.com/in/ton-profil" target="_blank" title="LinkedIn">LinkedIn</a>
+            <p>Réseaux</p>
+            <a href="https://github.com/nadal243/PROJET---Programmation-informatique" target="_blank" title="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/nadal-ngaki-mupati-998344322/" target="_blank" title="LinkedIn">LinkedIn</a>
           </div>
           <div class="footer-items">
-            <h3>ADRESSE</h3>
-            <p>91360 Epinay sur Orge, France</p>
+            <p>Adresse</p>
+            <p>91360 Epinay sur orge, France</p>
           </div>
 
           <div class="footer-items">
-            <h3>Email</h3>
+            <p>Email</p>
             <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
           </div>
           <div class="footer-items">
-            <h3>Téléphone</h3>
+            <p>Téléphone</p>
             <p>+33 766932319</p>
           </div>
         </div>
-        <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits réservés.</p></center>
+        <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center>
       </footer>
     </div>
     

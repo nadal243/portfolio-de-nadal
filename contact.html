@@ -1,0 +1,267 @@
+<!DOCTYPE html> 
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="Portfolio de Nadal NGAKI MUPATI, etudiant sciences pour l'ingénieur" name="description">
+        <meta name="keywords" content =  "étudiant, ingénieur, scinces pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
+        <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
+        <meta name="author" content="Nadal NGAKI MUPATI">
+        <title>Portfolio de Nadal NGAKI MUPATI</title>
+        <link rel="stylesheet" href="site_web.css">
+        <script src="site_web.js" defer></script>
+    </head>
+    <body>
+        <!--la page en intégralité-->
+        <div class="integralite">
+            <!--en tete de la page-->
+            <header>
+                <div style="display:flex; gap:16px; align-items: center;">
+                    <nav>
+                        <ul class="menu">
+                          <li><a href="index.html" data-i18n="nav.presentation">Présentation</a></li>
+                          <li><a href="competence.html" data-i18n="nav.competences">Compétences</a></li>
+                          <li><a href="index.html#parcours" data-i18n="nav.parcours">Educations</a></li>
+                          <li><a href="projets.html" data-i18n="nav.projets">Projets</a></li>
+                          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+
+                <div class="langs">
+                    <button id="ln-fr" title="FR">FR</button>
+                    <button id="ln-en" title="EN">EN</button>
+                    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
+                </div>
+            </header>
+
+            <!--le contenu ou le corps de la page-->
+            <main>
+                <!--formulaire de contact-->
+                <center><h1 data-i18n="contact.title">Formulaire de contact</h1></center>
+                <center><p><em>N'hésitez pas à me contacter via ce formulaire.</em></p></center>
+                <section>
+                    <form id="contact-form" action="https://formspree.io/f/mrezbovr" method="POST">
+                        <label for="nom" data-i18n="contact.nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+
+                        <label for="prenom" data-i18n="contact.prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom" required>
+
+                        <label for="entreprise" data-i18n="contact.entreprise">Entreprise (optionnel)</label>
+                        <input type="text" id="entreprise" name="entreprise">
+
+                        <label for="objet" data-i18n="contact.objet">Objet du contact *</label>
+                        <select id="objet" name="objet" required>
+                            <option value="">-- Sélectionnez un objet --</option>
+                            <option value="Alternance">Alternance</option>
+                            <option value="Stage">Stage</option>
+                            <option value="CDI">CDI</option>
+                            <option value="CDD">CDD</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Autres">Autres</option>
+                        </select>
+
+                        <label for="recruteur" data-i18n="contact.recruteur">Êtes-vous un recruteur ? *</label>
+                        <select id="recruteur" name="recruteur" required>
+                            <option value="">-- Sélectionnez une option --</option>
+                            <option value="Oui">Oui</option>
+                            <option value="Non">Non</option>
+                        </select>
+
+                        <div id="qui-etes-vous-container" style="display:none;">
+                            <label for="qui-etes-vous" data-i18n="contact.qui">Qui êtes-vous ?</label>
+                            <input type="text" id="qui-etes-vous" name="qui-etes-vous" placeholder="Exemple : Étudiant, Entrepreneur, etc.">
+                        </div>
+
+                        <label for="email" data-i18n="contact.email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div id="email-error" class="alert-error" style="display:none;"></div>
+
+                        <label for="pays" data-i18n="contact.pays">Pays *</label>
+                        <select id="pays" name="pays" required>
+                            <option value="">-- Sélectionnez un pays --</option>
+                            <option value="France">France</option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Suisse">Suisse</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Allemagne">Allemagne</option>
+                            <option value="Espagne">Espagne</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Royaume-Uni">Royaume-Uni</option>
+                            <option value="États-Unis">États-Unis</option>
+                            <option value="République démocratique du Congo">République démocratique du Congo</option>
+                            <option value="Maroc">Maroc</option>
+                            <option value="Algérie">Algérie</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+
+                        <label for="region" data-i18n="contact.region">Région (si France)</label>
+                        <select id="region" name="region">
+                            <option value="">-- Sélectionnez une région --</option>
+                            <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+                            <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+                            <option value="Bretagne">Bretagne</option>
+                            <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+                            <option value="Corse">Corse</option>
+                            <option value="Grand Est">Grand Est</option>
+                            <option value="Hauts-de-France">Hauts-de-France</option>
+                            <option value="Île-de-France">Île-de-France</option>
+                            <option value="Normandie">Normandie</option>
+                            <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+                            <option value="Occitanie">Occitanie</option>
+                            <option value="Pays de la Loire">Pays de la Loire</option>
+                            <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Guyane">Guyane</option>
+                            <option value="La Réunion">La Réunion</option>
+                            <option value="Mayotte">Mayotte</option>
+                        </select>
+
+                        <label for="departement" data-i18n="contact.departement">Département (si France)</label>
+                        <select id="departement" name="departement">
+                            <option value="">-- Sélectionnez un département --</option>
+                            <option value="01">01 - Ain</option>
+                            <option value="02">02 - Aisne</option>
+                            <option value="03">03 - Allier</option>
+                            <option value="04">04 - Alpes-de-Haute-Provence</option>
+                            <option value="05">05 - Hautes-Alpes</option>
+                            <option value="06">06 - Alpes-Maritimes</option>
+                            <option value="07">07 - Ardèche</option>
+                            <option value="08">08 - Ardennes</option>
+                            <option value="09">09 - Ariège</option>
+                            <option value="10">10 - Aube</option>
+                            <option value="11">11 - Aude</option>
+                            <option value="12">12 - Aveyron</option>
+                            <option value="13">13 - Bouches-du-Rhône</option>
+                            <option value="14">14 - Calvados</option>
+                            <option value="15">15 - Cantal</option>
+                            <option value="16">16 - Charente</option>
+                            <option value="17">17 - Charente-Maritime</option>
+                            <option value="18">18 - Cher</option>
+                            <option value="19">19 - Corrèze</option>
+                            <option value="21">21 - Côte-d'Or</option>
+                            <option value="22">22 - Côtes-d'Armor</option>
+                            <option value="23">23 - Creuse</option>
+                            <option value="24">24 - Dordogne</option>
+                            <option value="25">25 - Doubs</option>
+                            <option value="26">26 - Drôme</option>
+                            <option value="27">27 - Eure</option>
+                            <option value="28">28 - Eure-et-Loir</option>
+                            <option value="29">29 - Finistère</option>
+                            <option value="2A">2A - Corse-du-Sud</option>
+                            <option value="2B">2B - Haute-Corse</option>
+                            <option value="30">30 - Gard</option>
+                            <option value="31">31 - Haute-Garonne</option>
+                            <option value="32">32 - Gers</option>
+                            <option value="33">33 - Gironde</option>
+                            <option value="34">34 - Hérault</option>
+                            <option value="35">35 - Ille-et-Vilaine</option>
+                            <option value="36">36 - Indre</option>
+                            <option value="37">37 - Indre-et-Loire</option>
+                            <option value="38">38 - Isère</option>
+                            <option value="39">39 - Jura</option>
+                            <option value="40">40 - Landes</option>
+                            <option value="41">41 - Loir-et-Cher</option>
+                            <option value="42">42 - Loire</option>
+                            <option value="43">43 - Haute-Loire</option>
+                            <option value="44">44 - Loire-Atlantique</option>
+                            <option value="45">45 - Loiret</option>
+                            <option value="46">46 - Lot</option>
+                            <option value="47">47 - Lot-et-Garonne</option>
+                            <option value="48">48 - Lozère</option>
+                            <option value="49">49 - Maine-et-Loire</option>
+                            <option value="50">50 - Manche</option>
+                            <option value="51">51 - Marne</option>
+                            <option value="52">52 - Haute-Marne</option>
+                            <option value="53">53 - Mayenne</option>
+                            <option value="54">54 - Meurthe-et-Moselle</option>
+                            <option value="55">55 - Meuse</option>
+                            <option value="56">56 - Morbihan</option>
+                            <option value="57">57 - Moselle</option>
+                            <option value="58">58 - Nièvre</option>
+                            <option value="59">59 - Nord</option>
+                            <option value="60">60 - Oise</option>
+                            <option value="61">61 - Orne</option>
+                            <option value="62">62 - Pas-de-Calais</option>
+                            <option value="63">63 - Puy-de-Dôme</option>
+                            <option value="64">64 - Pyrénées-Atlantiques</option>
+                            <option value="65">65 - Hautes-Pyrénées</option>
+                            <option value="66">66 - Pyrénées-Orientales</option>
+                            <option value="67">67 - Bas-Rhin</option>
+                            <option value="68">68 - Haut-Rhin</option>
+                            <option value="69">69 - Rhône</option>
+                            <option value="70">70 - Haute-Saône</option>
+                            <option value="71">71 - Saône-et-Loire</option>
+                            <option value="72">72 - Sarthe</option>
+                            <option value="73">73 - Savoie</option>
+                            <option value="74">74 - Haute-Savoie</option>
+                            <option value="75">75 - Paris</option>
+                            <option value="76">76 - Seine-Maritime</option>
+                            <option value="77">77 - Seine-et-Marne</option>
+                            <option value="78">78 - Yvelines</option>
+                            <option value="79">79 - Deux-Sèvres</option>
+                            <option value="80">80 - Somme</option>
+                            <option value="81">81 - Tarn</option>
+                            <option value="82">82 - Tarn-et-Garonne</option>
+                            <option value="83">83 - Var</option>
+                            <option value="84">84 - Vaucluse</option>
+                            <option value="85">85 - Vendée</option>
+                            <option value="86">86 - Vienne</option>
+                            <option value="87">87 - Haute-Vienne</option>
+                            <option value="88">88 - Vosges</option>
+                            <option value="89">89 - Yonne</option>
+                            <option value="90">90 - Territoire de Belfort</option>
+                            <option value="91">91 - Essonne</option>
+                            <option value="92">92 - Hauts-de-Seine</option>
+                            <option value="93">93 - Seine-Saint-Denis</option>
+                            <option value="94">94 - Val-de-Marne</option>
+                            <option value="95">95 - Val-d'Oise</option>
+                            <option value="971">971 - Guadeloupe</option>
+                            <option value="972">972 - Martinique</option>
+                            <option value="973">973 - Guyane</option>
+                            <option value="974">974 - La Réunion</option>
+                            <option value="976">976 - Mayotte</option>
+                        </select>
+
+                        <label for="message" data-i18n="contact.message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit" data-i18n="contact.submit">Envoyer</button>
+                    </form>
+                    <div id="form-reponse"></div>
+
+                </section>
+                
+            </main>
+
+            <!--pied de page-->
+            <footer class="footer">
+                <div class="footer-content">
+                    
+                    <div class="footer-items">
+                        <p>Réseaux</p>
+                        <a href="https://github.com/nadal243/PROJET---Programmation-informatique" target="_blank" title="GitHub">GitHub</a>
+                        <a href="https://www.linkedin.com/in/nadal-ngaki-mupati-998344322/" target="_blank" title="LinkedIn">LinkedIn</a>
+                    </div>
+                    <div class="footer-items">
+                        <p>Adresse</p>
+                        <p>91360 Epinay sur orge, France</p>
+                    </div>
+
+                    <div class="footer-items">
+                        <p>Email</p>
+                        <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
+                    </div>
+                    <div class="footer-items">
+                        <p>Téléphone</p>
+                        <p>+33 766932319</p>
+                    </div>
+
+                </div>
+                <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
+            </footer>
+    </div>
+</html>

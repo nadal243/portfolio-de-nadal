@@ -1,3 +1,4 @@
+
 /* MOBILE - Extra small devices (max 480px) */
 @media (max-width: 480px) {
   body {
@@ -274,6 +275,9 @@
   }
 }
 
+/* ========================================
+  STYLES DE BASE & MISE EN PAGE GLOBALE
+  ======================================== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -285,6 +289,9 @@ body {
 * {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
+/* ========================================
+   EN-TÊTE ET NAVIGATION PRINCIPALE
+   ======================================== */
 header {
     background: #004080;
     color: white;
@@ -309,6 +316,9 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+/* ========================================
+   CONTENEUR GLOBAL ET SECTION INTRO
+   ======================================== */
 .integralite {
     max-width: 100%;
     margin: 2em auto;
@@ -345,6 +355,9 @@ nav a:hover {
 }
 
 
+/* ========================================
+   BOUTON CV ET APERCU HERO
+   ======================================== */
 /* Style général pour le bouton CV */
 .btn-cv {
     display: inline-flex; /* Alignement de l'icône et du texte */
@@ -394,6 +407,9 @@ nav a:hover {
     margin: 0 auto 2em;
 }
 
+/* ========================================
+   SECTION COMPÉTENCES (APERÇU ACCUEIL)
+   ======================================== */
 /* Nouvelle section compétences */
 .competences {
     margin-bottom: 2em;
@@ -428,20 +444,28 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 
+/* ========================================
+  SECTION PROJETS (APERÇU ACCUEIL)
+  ======================================== */
 /* Projects styles */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 18px;
+  display: grid;
+  /* Garde des cartes à largeur plafonnée même quand il reste peu d'éléments */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center; /* centre les cartes même s'il reste une seule colonne */
+  gap: 50px; /* espace visible entre les blocs */
 }
 
 .project-item {
-    background: #e6f0ff;
-    padding: 1em 1.5em;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background: #e6f0ff;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  max-width: 320px; /* limite la largeur pour éviter l'étirement en fin de filtre */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .project-item:hover {
@@ -464,6 +488,9 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 
+/* ========================================
+  POURQUOI MOI
+  ======================================== */
 /* Pourquoi moi */
 .pourquoi-moi {
     background: #f0f4ff;
@@ -515,6 +542,9 @@ nav a:hover {
    height: 50px;
 }
 
+/* ========================================
+  TIMELINE FORMATION / EXPÉRIENCE
+  ======================================== */
 /* Timeline */
 .timeline {
     max-width: 750px;
@@ -542,6 +572,9 @@ nav a:hover {
     margin-bottom: 0.2em;
 }
 
+/* ========================================
+  PROJETS - APERÇU / LISTE
+  ======================================== */
 /* Projets aperçu */
 .projets-apercu {
     margin-bottom: 3em;
@@ -586,6 +619,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* ========================================
+  PIED DE PAGE
+  ======================================== */
 /* Pied de page ou footer*/
 footer {
     background: #5884b1;
@@ -609,6 +645,9 @@ footer {
 }
 
 
+/* ========================================
+  FORMULAIRE DE CONTACT
+  ======================================== */
 /* Formulaire de contact */
 form {
   max-width: 500px;
@@ -642,6 +681,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+
+/* ========================================
+  RUBRIQUE CENTRE D'INTÉRÊT (HORIZONTAL SCROLL)
+  ======================================== */
 /*rubrqiue centre d'interet*/
 
 p.intro {
@@ -716,12 +759,21 @@ p.intro {
     font-size: 1.2em;
     }
 }
+.portfolio-container {
+  margin: 0 auto 40px;
+  max-width: 1200px;
+  padding: 24px;
 
+  box-sizing: border-box;
+}
 
+/* ========================================
+  PAGE COMPÉTENCES (GRILLE DÉTAILLÉE)
+  ======================================== */
 /*Rubrique compétences */
 
 .skills{
-  margin: 40px auto;
+  margin: 0 auto 40px;
   max-width: 1200px;
   padding: 24px;
   color: #e6eef6;
@@ -758,6 +810,9 @@ p.intro {
 
 
 
+/* ========================================
+  CARTES CENTRES D'INTÉRÊT (GRILLE)
+  ======================================== */
 /*Rubrique centre d'intérêt*/
 
 .grid {
@@ -831,6 +886,9 @@ p.intro {
   font-size: 13px;
 }
 
+/* ========================================
+  MODE SOMBRE (OVERRIDES)
+  ======================================== */
 /* THEME - dark mode overrides */
 .dark body {
   /* background: #0f1724; dark background behind the site wrapper */
@@ -880,6 +938,9 @@ p.intro {
 
 
 
+/* ========================================
+  MODALES (OVERLAY + CONTENU)
+  ======================================== */
 /* Style du fond de la modale (l'écran qui s'assombrit) */
 .modal {
     display: none; /* Cache la modale par défaut */
