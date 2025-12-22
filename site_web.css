@@ -488,6 +488,31 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 
+
+
+/* ========================================
+  SECTION CENTRES D'INTÉRÊT (APERÇU ACCUEIL)
+  ======================================== */
+/* Centres d'intérêt styles */
+.interets {
+  /* espace vertical autour du bloc centres d'intérêt */
+  margin: 3em 0 2em;
+}
+.interets h3 {
+    color: #004080;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.interet-item {
+    background: #e6f0ff;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    flex: 1 1 120px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
 /* ========================================
   POURQUOI MOI
   ======================================== */
@@ -521,26 +546,7 @@ nav a:hover {
     position: absolute;
     left: 0;
 }
-.interets {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centrage horizontal */
-    align-items: center;
-    gap: 10em; /* Espace entre les icônes */
-    flex-wrap: wrap; /* Passe à la ligne si trop serré */
-}
 
-.interet-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px; /* largeur fixe pour homogénéité */ 
-}
-.interet-item  svg {
-   fill: #004080;
-   width: 50px; 
-   height: 50px;
-}
 
 /* ========================================
   TIMELINE FORMATION / EXPÉRIENCE
@@ -687,85 +693,6 @@ h2 {
   ======================================== */
 /*rubrqiue centre d'interet*/
 
-p.intro {
-    color: #555;
-    font-size: 1.1em;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.scroll-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    border-radius: 10px;
-    white-space: nowrap;
-}
-
-.item {
-    min-width: 300px;
-    height: 200px;
-    background: #e6f0ff;
-    color:blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    flex-shrink: 0;
-    margin: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-}
-
-.item.foot {
-  background: url('images/lionnel_messi.jpg') center/cover no-repeat;
-}
-
-.item.basket {
-  background: url('images/michael_jordan.jpg') center/cover no-repeat;
-}
-
-.item.voyage {
-  background: url('images/Sydney_Australia.jpg') center/cover no-repeat;
-}
-
-.item.lecture {
-  background: url('images/lecture.jpg') center/cover no-repeat;
-
-}
-
-.item.musique {
-  background: url('images/spotify.png') center/cover no-repeat;
-
-}
-
-.item:hover {
-    transform: scale(1.05);
-    background: #2980b9;
-}
-
-@media (max-width: 600px) {
-    .item {
-    min-width: 180px;
-    font-size: 1.2em;
-    }
-}
-.portfolio-container {
-  margin: 0 auto 40px;
-  max-width: 1200px;
-  padding: 24px;
-
-  box-sizing: border-box;
-}
 
 /* ========================================
   PAGE COMPÉTENCES (GRILLE DÉTAILLÉE)
@@ -778,6 +705,9 @@ p.intro {
   padding: 24px;
   color: #e6eef6;
   box-sizing: border-box;
+}
+.portfolio-header {
+  color: #333;
 }
 .skills h2{
   font-size: 26px;
@@ -815,88 +745,19 @@ p.intro {
   ======================================== */
 /*Rubrique centre d'intérêt*/
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-}
 
-.interest-card {
-  background: #e6f0ff;
-  padding: 18px;
-  border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(18, 18, 20, 0.6);
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
-}
-
-.interest-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.65);
-}
-
-.icon {
-  font-size: 34px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.interest-card h3 {
-  margin: 0 0 8px 0;
-  font-size: 18px;
-}
-
-.muted {
-  color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.tag {
-  display:inline-block; 
-  padding:6px 8px; 
-  border-radius:999px; 
-  background:rgba(47, 46, 46, 0.05); 
-  font-size:12px; color:#94a3b8; 
-  margin-top:10px;
-}
-
-/* --- Galerie --- */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.photo {
-  width: 160px;
-  height: 100px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-size: 13px;
-}
 
 /* ========================================
   MODE SOMBRE (OVERRIDES)
   ======================================== */
 /* THEME - dark mode overrides */
 .dark body {
-  /* background: #0f1724; dark background behind the site wrapper */
-  color: white;
-  background: black;
+  /* Fond général sombre derrière le conteneur principal */
+  color: #e2e8f0;
+  background: #020617;
 }
 .dark .integralite {
-  background: #071226;
+  background: #020817;
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 .dark {
@@ -909,20 +770,98 @@ p.intro {
 .dark nav a { color: #d6e6ff; }
 .dark .btn { background: #0b3a5c; color: #fff; }
 .dark .btn:hover { background: #062434; }
-.dark .competence-item, .dark .project-item, .dark .projet, .dark .interest-card {
-  background: #062033;
+/* Cartes (accueil, projets, compétences détaillées, centres d'intérêt) */
+.dark .competence-item,
+.dark .project-item,
+.dark .projet,
+.dark .interet-item,
+.dark .skills .card {
+  background: #020617;
   color: #d6e6ff;
   box-shadow: 0 8px 30px rgba(1,1,10,0.6);
 }
+.dark .competence-item:hover,
+.dark .project-item:hover,
+.dark .projet:hover,
+.dark .interet-item:hover,
+.dark .skills .card:hover {
+  background: #0f172a;
+}
+.dark .skills h2 { color: #e5edff; }
+.dark .skills .card h3 { color: #e2e8f0; }
+.dark .skills .muted { color: #9fb1c8; }
+.dark .skills .meter { background: rgba(255,255,255,0.06); }
+.dark .skills .tag { background: rgba(148,163,184,0.12); color: #cbd5f5; }
+.dark .portfolio-header {
+  color: #e2e8f0;
+}
+.dark .pourquoi-moi h3 {
+  color: #ffffff;
+}
 .dark .pourquoi-moi { background: #062233; box-shadow: none; }
 .dark footer { background: #041729; color: #cfe8ff; }
-.dark .timeline { border-left-color: #1e90ff; }
+.dark .timeline {
+  border-left-color: #1e90ff;
+  color: #ffffff;
+}
+.dark .timeline h3,
+.dark .timeline-item,
+.dark .timeline-item strong,
+.dark .timeline-item span,
+.dark .timeline-item em,
+.dark .timeline-item a {
+  color: #ffffff;
+}
 .dark .timeline-item::before { color: #1e90ff; }
 .dark a { color: #9fd1ff; }
 .dark .muted { color: #9fb1c8; }
 .dark .photo { background: rgba(255,255,255,0.02); }
 .dark input, .dark textarea { background: #062233; color: #d6e6ff; border: 1px solid rgba(255,255,255,0.06); }
-.dark button { background-color: #0b3a5c; }
+.dark button {
+  background-color: #0b3a5c;
+  color: #e2e8f0;
+}
+.dark button:hover {
+  background-color: #062434;
+}
+
+/* Texte du formulaire de contact en mode sombre */
+.dark main h1,
+.dark main p,
+.dark label {
+  color: #ffffff;
+}
+
+.dark select,
+.dark option {
+  background: #062233;
+  color: #d6e6ff;
+}
+
+/* Titres et textes des blocs projets (aperçu index) en sombre */
+.dark .projet h4 {
+  color: #e2e8f0;
+}
+.dark .projet p {
+  color: #e2e8f0;
+}
+
+/* Bouton CV en mode sombre */
+.dark .btn-cv {
+  background-color: #0b3a5c;
+  color: #e2e8f0;
+}
+.dark .btn-cv:hover {
+  background-color: #062434;
+}
+
+/* Titres principaux de l'accueil en mode sombre */
+.dark .a_propos h3,
+.dark .competences h3,
+.dark .projets-apercu h3,
+.dark .interets h3 {
+  color: #ffffff;
+}
 
 /* theme toggle button */
 #theme-toggle {

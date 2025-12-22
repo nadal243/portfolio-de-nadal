@@ -44,73 +44,72 @@
 
             <div class="portfolio-container">
                 <div class="portfolio-header">
-                    <h1>Mes Projets</h1>
-                    <p>Découvrez mes réalisations en développement, automatisme, CAO et systèmes embarqués<em> (n'hésite pas à explorer mes projets en cliquant dessus)</em> </p>
-                    
+                    <h1 data-i18n="projects.page.title">Mes Projets</h1>
+                    <p data-i18n="projects.page.subtitle">Découvrez mes réalisations en développement, automatisme, CAO et systèmes embarqués (n'hésite pas à explorer mes projets en cliquant dessus)</p>
                 </div>
 
                 <div class="filters-container">
                     <button class="filter-btn active" data-category="all">
-                        <i class="fas fa-grip-horizontal"></i> Tous les projets
+                        <i class="fas fa-grip-horizontal"></i> <span data-i18n="projects.filter.all">Tous les projets</span>
                     </button>
                     
                     <button class="filter-btn" data-category="Automatisme">
-                        <i class="fas fa-cogs"></i> Automatisme
+                        <i class="fas fa-cogs"></i> <span data-i18n="projects.filter.automatisme">Automatisme</span>
                     </button>
                     <button class="filter-btn" data-category="CAO">
-                        <i class="fas fa-drafting-compass"></i> CAO
+                        <i class="fas fa-drafting-compass"></i> <span data-i18n="projects.filter.cao">CAO</span>
                     </button>
                     <button class="filter-btn" data-category="Électronique">
-                        <i class="fas fa-microchip"></i> Électronique
+                        <i class="fas fa-microchip"></i> <span data-i18n="projects.filter.elec">Électronique</span>
                     </button>
                     <button class="filter-btn" data-category="Programmation">
-                        <i class="fab fa-python"></i> Programmation
+                        <i class="fab fa-python"></i> <span data-i18n="projects.filter.prog">Programmation</span>
                     </button>
                 </div>
 
-                <p class="project-count"><span id="count">8</span> projets trouvés</p>
+                <p class="project-count"><span id="count">8</span> <span data-i18n="projects.count.label">projets trouvés</span></p>
 
                 <div class="projects-grid" id="projects-grid">
                     <div class="project-item" data-category="Automatisme" onclick="openModal('modal-automatisme1')" style="cursor: pointer;">
                         <img src="images/feu_tricolore.jpg" alt="photo automatisme" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Système automatique des feux tricolores</div>
-                        <div class="tag">Automatisme</div>
+                        <div class="muted" data-i18n="projects.card.traffic">Système automatique des feux tricolores</div>
+                        <div class="tag" data-i18n="projects.tag.automatisme">Automatisme</div>
                     </div>
                     <div class="project-item" data-category="CAO" onclick="openModal('modal-cao1')" style="cursor: pointer;">
                         <img src="images/CAO.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Conception 3D avec SolidWorks</div>
-                        <div class="tag">CAO</div>
+                        <div class="muted" data-i18n="projects.card.cao1">Conception 3D avec SolidWorks</div>
+                        <div class="tag" data-i18n="projects.tag.cao">CAO</div>
                     </div>
                     <div class="project-item" data-category="Électronique" onclick="openModal('modal-electronique1')" style="cursor: pointer;">
                         <img src="images/afficheur.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Afficheur 7 segments</div>
-                        <div class="tag">Électronique</div>
+                        <div class="muted" data-i18n="projects.card.display7seg">Afficheur 7 segments</div>
+                        <div class="tag" data-i18n="projects.tag.elec">Électronique</div>
                     </div>
                     <div class="project-item" data-category="Automatisme" onclick="openModal('modal-automatisme2')" style="cursor: pointer;">
                         <img src="images/ascenseur.jpg" alt="photo automatisme" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Système de gestion d'un ascenseur</div>  
-                        <div class="tag">Automatisme</div>
+                        <div class="muted" data-i18n="projects.card.elevator">Système de gestion d'un ascenseur</div>  
+                        <div class="tag" data-i18n="projects.tag.automatisme">Automatisme</div>
                     </div>
                     
                     <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation1')" style="cursor: pointer;">
                        <img src="images/photo_python.jpg" alt="photo python" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Simulateur d'un distributeur bancaire</div>
-                        <div class="tag">Programmation</div>
+                        <div class="muted" data-i18n="projects.card.atm">Simulateur d'un distributeur bancaire</div>
+                        <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
                     </div>
                     <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation2')" style="cursor: pointer;">
                        <img src="images/photo_python.jpg" alt="photo python" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Programmation d'un mini jeu vidéo</div>
-                        <div class="tag">Programmation</div>
+                        <div class="muted" data-i18n="projects.card.game">Programmation d'un mini jeu vidéo</div>
+                        <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
                     </div>
                     <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation3')" style="cursor: pointer;">
                        <img src="images/photo_C.jpg" alt="photo C" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Travaux pratiques universitaires</div>
-                        <div class="tag">Programmation</div>
+                        <div class="muted" data-i18n="projects.card.tp">Travaux pratiques universitaires</div>
+                        <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
                     </div>
                     <div class="project-item" data-category="CAO" onclick="openModal('modal-cao2')" style="cursor: pointer;">
                         <img src="images/CAO.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted">Conception 3D et assemblage mécanique avec SolidWorks</div>
-                        <div class="tag">CAO</div>
+                        <div class="muted" data-i18n="projects.card.cao2">Conception 3D et assemblage mécanique avec SolidWorks</div>
+                        <div class="tag" data-i18n="projects.tag.cao">CAO</div>
                     </div>
                 </div>
             </div>
@@ -147,13 +146,13 @@
     <div id="modal-automatisme1" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-automatisme1')">&times;</span>
-        <h2 style="color: #004080;">Système automatique des feux tricolores</h2>
-        <p><strong>Catégorie :</strong> Automatisme</p>
+                <h2 style="color: #004080;" data-i18n="modal.automatisme1.title">Système automatique des feux tricolores</h2>
+                <p><strong data-i18n="modal.automatisme1.category.label">Catégorie :</strong> <span data-i18n="modal.automatisme1.category.value">Automatisme</span></p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">c'est un projet qui consiste à l'elaboration d'un grafcet qui permet de gérer automatiquement les séquences des feux tricolores de plusieurs voies.</p>
+                <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.desc">Description du projet</h4>
+                <p style="text-align: justify;" data-i18n="modal.automatisme1.desc">c'est un projet qui consiste à l'elaboration d'un grafcet qui permet de gérer automatiquement les séquences des feux tricolores de plusieurs voies.</p>
         
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+                <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Grafcet niveau 2</li>
             <li>Automate programmable</li>
@@ -161,7 +160,7 @@
             <li>Actionneurs</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Séquence automatique des feux avec temporisation</li>
             <li>Détection de véhicules en approche</li>
@@ -169,38 +168,37 @@
             <li>Schneider Electric</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis de developper des compétences en élaboration de GRAFCET, la gestion de la temporisation, programmation d'un automate programmable et en conception de systèmes automatisés.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.automatisme1.skills">Ce projet m'a permis de developper des compétences en élaboration de GRAFCET, la gestion de la temporisation, programmation d'un automate programmable et en conception de systèmes automatisés.</p>
       </div>
     </div>
 
     <div id="modal-cao1" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-cao1')">&times;</span>
-        <h2 style="color: #004080;">Conception 3D avec SolidWorks</h2>
-        <p><strong>Catégorie :</strong> CAO</p>
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Ce projet consiste en la conception assistée par ordinateur (CAO) d'une pièce mécanique complexe utilisant le logiciel SolidWorks. Il s'agit de modéliser une pièce en 3D à partir de spécifications techniques, en tenant compte des contraintes de fabrication et d'assemblage.</p>
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+                <h2 style="color: #004080;" data-i18n="modal.cao1.title">Conception 3D avec SolidWorks</h2>
+                <p><strong data-i18n="modal.cao1.category.label">Catégorie :</strong> <span data-i18n="modal.cao1.category.value">CAO</span></p>
+                <h4 style="margin-top: 15px;" data-i18n="modal.cao1.section.desc">Description du projet</h4>
+                <p style="text-align: justify;" data-i18n="modal.cao1.desc">Ce projet consiste en la conception assistée par ordinateur (CAO) d'une pièce mécanique complexe utilisant le logiciel SolidWorks. Il s'agit de modéliser une pièce en 3D à partir de spécifications techniques, en tenant compte des contraintes de fabrication et d'assemblage.</p>
+                <h4 style="margin-top: 15px;" data-i18n="modal.cao1.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>SolidWorks (logiciel de CAO 3D)</li>
             <li>Normes de dessin technique</li>
             <li>Analyse de contraintes mécaniques</li>
         </ul>
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.cao1.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Modélisation 3D paramétrique</li>
             <li>Génération de plans 2D</li>
-            <li>Simulation d'assemblage</li>
         </ul>
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis de développer des compétences en conception mécanique, maîtrise du logiciel SolidWorks, compréhension des normes de dessin technique et analyse de faisabilité de fabrication.</p>
-        <h4 style="margin-top: 15px;">Vidéo d'illustration de la conception</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.cao1.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.cao1.skills">Ce projet m'a permis de développer des compétences en conception mécanique, maîtrise du logiciel SolidWorks, compréhension des normes de dessin technique et analyse de faisabilité de fabrication.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.cao1.section.media">Photos d'illustration de la conception</h4>
         <div style="text-align: center;">
-            <video width="80%" height="auto" controls>
-                <source src="videos/vdeo_conception_bielle.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture de vidéos.
-            </video>
+            <img src="images/capture1.jpg" alt="Photo de conception 3D" style="width: 70%; height: auto; margin-bottom: 10px; border-radius: 4px;">
+            <img src="images/capture2.jpg" alt="Photo de conception 3D" style="width: 70%; height: auto; margin-bottom: 10px; border-radius: 4px;">
+            <img src="images/capture3.jpg" alt="Photo de conception 3D" style="width: 70%; height: auto; margin-bottom: 10px; border-radius: 4px;">
+            <img src="images/capture4.jpg" alt="Photo de conception 3D" style="width: 70%; height: auto; margin-bottom: 10px; border-radius: 4px;">
         </div>
       </div>
     </div>
@@ -208,13 +206,13 @@
     <div id="modal-electronique1" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-electronique1')">&times;</span>
-        <h2 style="color: #004080;">Afficheur 7 segments</h2>
-        <p><strong>Catégorie :</strong> Électronique</p>
+                <h2 style="color: #004080;" data-i18n="modal.elec1.title">Afficheur 7 segments</h2>
+                <p><strong data-i18n="modal.elec1.category.label">Catégorie :</strong> <span data-i18n="modal.elec1.category.value">Électronique</span></p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Réalisation d'un circuit électronique pour contrôler un afficheur 7 segments, permettant d'afficher des chiffres de 0 à 9. Le projet inclut la conception du schéma électrique, le routage du circuit imprimé et la programmation du microcontrôleur.</p>
+                <h4 style="margin-top: 15px;" data-i18n="modal.elec1.section.desc">Description du projet</h4>
+                <p style="text-align: justify;" data-i18n="modal.elec1.desc">Réalisation d'un circuit électronique pour contrôler un afficheur 7 segments, permettant d'afficher des chiffres de 0 à 9. Le projet inclut la conception du schéma électrique, le routage du circuit imprimé et la programmation du microcontrôleur.</p>
         
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+                <h4 style="margin-top: 15px;" data-i18n="modal.elec1.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>waveform generator</li>
             <li>Afficheur 7 segments</li>
@@ -223,16 +221,16 @@
             <li>Plaque d'essai</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.elec1.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Affichage de chiffres 0-9</li>
             <li>Contrôle multiplexé</li>
             <li>Interface utilisateur simple</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis d'acquérir des compétences en électronique numérique, les connaissances sur l'utilisation du boitier Digital discovery et sur l'application waveform generator.</p>
-        <h4 style="margin-top: 15px;">Photos d'illustration de la conception</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.elec1.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.elec1.skills">Ce projet m'a permis d'acquérir des compétences en électronique numérique, les connaissances sur l'utilisation du boitier Digital discovery et sur l'application waveform generator.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.elec1.section.media">Photos d'illustration de la conception</h4>
         <div style="text-align: center;">
             <img src="images/photo1.jpeg" alt="Circuit afficheur 7 segments" style="width: 40%; height: auto; margin-bottom: 10px; border-radius: 4px;">
             <img src="images/photo2.jpeg" alt="Montage afficheur 7 segments" style="width: 40%; height: auto; border-radius: 4px;">
@@ -247,13 +245,13 @@
     <div id="modal-automatisme2" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-automatisme2')">&times;</span>
-        <h2 style="color: #004080;">Système de gestion d'un ascenseur</h2>
-        <p><strong>Catégorie :</strong> Automatisme</p>
+                <h2 style="color: #004080;" data-i18n="modal.automatisme2.title">Système de gestion d'un ascenseur</h2>
+                <p><strong data-i18n="modal.automatisme2.category.label">Catégorie :</strong> <span data-i18n="modal.automatisme2.category.value">Automatisme</span></p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Conception et réalisation d'un système automatisé simulant le fonctionnement d'un ascenseur. Le projet utilise un automate programmable pour gérer les déplacements entre étages, les appels internes et externes, ainsi que les sécurités.</p>
+                <h4 style="margin-top: 15px;" data-i18n="modal.automatisme2.section.desc">Description du projet</h4>
+                <p style="text-align: justify;" data-i18n="modal.automatisme2.desc">Conception et réalisation d'un système automatisé simulant le fonctionnement d'un ascenseur. Le projet utilise un automate programmable pour gérer les déplacements entre étages, les appels internes et externes, ainsi que les sécurités.</p>
         
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+                <h4 style="margin-top: 15px;" data-i18n="modal.automatisme2.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Automate programmable (PLC)</li>
             <li>Capteurs de position</li>
@@ -261,20 +259,20 @@
             <li>Logiciel de programmation Ladder</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.automatisme2.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Déplacement automatique entre étages</li>
             <li>Gestion des appels prioritaires</li>
             <li>Systèmes de sécurité (portes, surcharge)</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis de développer des compétences en automatisme industriel, programmation d'automates, conception de systèmes de contrôle et gestion de la sécurité dans les systèmes automatisés.</p>
-        <h4 style="margin-top: 15px;">Vidéo d'illustration du projet</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.automatisme2.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.automatisme2.skills">Ce projet m'a permis de développer des compétences en automatisme industriel, programmation d'automates, conception de systèmes de contrôle et gestion de la sécurité dans les systèmes automatisés.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.automatisme2.section.media">Vidéo d'illustration du projet</h4>
         <div style="text-align: center;">
             <video width="80%" height="auto" controls>
                 <source src="videos/video_ascenseur.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture de vidéos.
+                <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
             </video>
         </div>
 
@@ -284,30 +282,38 @@
     <div id="modal-programmation1" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-programmation1')">&times;</span>
-        <h2 style="color: #004080;">Simulateur d'un distributeur bancaire</h2>
-        <p><strong>Catégorie :</strong> Programmation</p>
+        <h2 style="color: #004080;" data-i18n="modal.prog1.title">Simulateur d'un distributeur bancaire</h2>
+        <p><strong data-i18n="modal.prog1.category.label">Catégorie :</strong> <span data-i18n="modal.prog1.category.value">Programmation</span></p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Développement d'une application simulant le fonctionnement d'un distributeur automatique de billets (DAB). Le programme gère l'authentification, les consultations de solde, les retraits et les dépôts, avec une interface utilisateur graphique.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.desc">Description du projet</h4>
+        <p style="text-align: justify;" data-i18n="modal.prog1.desc">Développement d'une application simulant le fonctionnement d'un distributeur automatique de billets (DAB). Le programme gère l'authentification, les consultations de solde, les retraits et les dépôts, avec une interface utilisateur graphique.</p>
         
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Python</li>
             <li>Bibliothèque Tkinter (interface graphique)</li>
-            <li>Base de données SQLite</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
-            <li>Authentification par carte et code PIN</li>
+            <li>Authentification par le nom d'utilisateur</li>
             <li>Consultation de solde</li>
             <li>Retraits et dépôts</li>
+            <li>Transfert d'argent</li>
             <li>Gestion des erreurs et sécurité</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis d'acquérir des compétences en programmation orientée objet, développement d'interfaces graphiques, gestion de bases de données et conception d'applications sécurisées.</p>
-        <h4 style="margin-top: 15px;">voir le projet sur mon GitHub</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.prog1.skills">Ce projet m'a permis d'acquérir des compétences en programmation orientée objet, développement d'interfaces graphiques, gestion de bases de données et conception d'applications sécurisées.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.media">Photo et vidéo d'illustration du projet</h4>
+        <div style="text-align: center; margin-bottom: 15px;">
+            <img src="images/simulateur_banque.jpg" alt="Capture d'écran du simulateur DAB" style="width: 80%; height: auto; margin-bottom: 10px; border-radius: 4px;">
+            <video width="80%" height="auto" controls>
+                <source src="videos/simulateur_banque.mp4" type="video/mp4">
+                <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
+            </video>
+        </div>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.github">voir le projet sur mon GitHub</h4>
         <div style="text-align: left;">
             <a href="https://github.com/nadal243/PROJET---Programmation-informatique.git" target="_blank" title="GitHub">GitHub</a>
         </div>
@@ -317,30 +323,41 @@
     <div id="modal-programmation2" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-programmation2')">&times;</span>
-        <h2 style="color: #004080;">Programmation d'un mini jeu vidéo</h2>
-        <p><strong>Catégorie :</strong> Programmation</p>
+        <h2 style="color: #004080;" data-i18n="modal.prog2.title">Programmation d'un mini jeu vidéo</h2>
+        <p><strong data-i18n="modal.prog2.category.label">Catégorie :</strong> <span data-i18n="modal.prog2.category.value">Programmation</span></p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Création d'un jeu vidéo simple en Python utilisant la bibliothèque Pygame. Le jeu inclut des graphismes, des contrôles utilisateur, un système de score et des niveaux de difficulté progressifs.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.desc">Description du projet</h4>
+        <p style="text-align: justify;" data-i18n="modal.prog2.desc">Création d'un jeu vidéo simple en Python utilisant la bibliothèque Pygame. Le jeu inclut des graphismes, des contrôles utilisateur, un système de score et des niveaux de difficulté progressifs.</p>
         
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Python</li>
-            <li>Bibliothèque Pygame</li>
-            <li>Éditeur d'images pour les sprites</li>
+            <li>Bibliothèque Tkinter</li>
+            <li>Bibliothèque Numpy</li>
+            <li>Bibliothèque Random</li>
+            <li>Bibliothèque Math</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Contrôles clavier/souris</li>
             <li>Système de collision</li>
             <li>Gestion du score et des vies</li>
-            <li>Niveaux progressifs</li>
+            <li>Gestion des budgets avec des graphiques</li>
+            <li>Déplacements et interactions</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis de développer des compétences en programmation de jeux, gestion d'événements en temps réel, optimisation des performances et conception d'expériences utilisateur ludiques.</p>
-        <h4 style="margin-top: 15px;">voir le projet sur mon GitHub</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.prog2.skills">Ce projet m'a permis de développer des compétences en programmation de jeux, gestion d'événements en temps réel, optimisation des performances et conception d'expériences utilisateur ludiques.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.media">Photo et video d'illustration du projet</h4>
+        <div style="text-align: center; margin-bottom: 15px;">
+            <img src="images/jeu_eco_guerrier.jpg" alt="Capture d'écran du jeu vidéo" style="width: 80%; height: auto; margin-bottom: 10px; border-radius: 4px;">
+            <video width="80%" height="auto" controls>
+                <source src="videos/jeu_eco-guerrier.mp4" type="video/mp4">
+                <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
+            </video>
+        </div>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.github">voir le projet sur mon GitHub</h4>
         <div style="text-align: left;">
             <a href="https://github.com/nadal243/PROJET---Programmation-informatique.git" target="_blank" title="GitHub">GitHub</a>
         </div>
@@ -350,13 +367,13 @@
     <div id="modal-programmation3" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-programmation3')">&times;</span>
-        <h2 style="color: #004080;">Travaux pratiques universitaires</h2>
-        <p><strong>Catégorie :</strong> Programmation</p>
+        <h2 style="color: #004080;" data-i18n="modal.prog3.title">Travaux pratiques universitaires</h2>
+        <p><strong data-i18n="modal.prog3.category.label">Catégorie :</strong> <span data-i18n="modal.prog3.category.value">Programmation</span></p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Ensemble de travaux pratiques en langage C couvrant les concepts fondamentaux de la programmation : structures de données, algorithmes, gestion de la mémoire et optimisation du code.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog3.section.desc">Description du projet</h4>
+        <p style="text-align: justify;" data-i18n="modal.prog3.desc">Ensemble de travaux pratiques en langage C couvrant les concepts fondamentaux de la programmation : structures de données, algorithmes, gestion de la mémoire et optimisation du code.</p>
         
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog3.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Langage C</li>
             <li>Compilateur GCC</li>
@@ -364,16 +381,17 @@
             <li>Outils de débogage (GDB)</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog3.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
-            <li>Implémentation d'algorithmes de tri</li>
+            <li>Gestion des chaines de caractères</li>
             <li>Gestion de structures de données (listes, piles, files)</li>
             <li>Programmation système (fichiers, processus)</li>
+            <li>Gestion de la mémoire</li>
         </ul>
         
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis d'approfondir mes connaissances en programmation système, optimisation du code, débogage avancé et compréhension des mécanismes internes des ordinateurs.</p>
-        <h4 style="margin-top: 15px;">voir le projet sur mon GitHub</h4>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog3.section.skills">Compétences acquises</h4>
+        <p style="text-align: justify;" data-i18n="modal.prog3.skills">Ce projet m'a permis d'approfondir mes connaissances en programmation système, optimisation du code, débogage avancé et compréhension des mécanismes internes des ordinateurs.</p>
+        <h4 style="margin-top: 15px;" data-i18n="modal.prog3.section.github">voir le projet sur mon GitHub</h4>
         <div style="text-align: left;">
             <a href="https://github.com/nadal243/PROJET---Programmation-informatique.git" target="_blank" title="GitHub">GitHub</a>
         </div>
@@ -381,32 +399,38 @@
     </div>
 
     <div id="modal-cao2" class="modal">
-      <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-cao2')">&times;</span>
-        <h2 style="color: #004080;">Conception 3D et assemblage mécanique avec SolidWorks</h2>
-        <p><strong>Catégorie :</strong> CAO</p>
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-cao2')">&times;</span>
+            <h2 style="color: #004080;" data-i18n="modal.cao2.title">Conception 3D et assemblage mécanique avec SolidWorks</h2>
+            <p><strong data-i18n="modal.cao2.category.label">Catégorie :</strong> <span data-i18n="modal.cao2.category.value">CAO</span></p>
+            
+            <h4 style="margin-top: 15px;" data-i18n="modal.cao2.section.desc">Description du projet</h4>
+            <p style="text-align: justify;" data-i18n="modal.cao2.desc">Projet complet de conception mécanique incluant la modélisation 3D de plusieurs pièces, leur assemblage virtuel et l'analyse de contraintes. Le projet simule la conception d'un mécanisme complexe avec vérification de l'assemblage et des interférences.</p>
+            
+            <h4 style="margin-top: 15px;" data-i18n="modal.cao2.section.tools">Outils et Technologies utilisés</h4>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+                <li>SolidWorks (CAO 3D)</li>
+                <li>Normes de conception mécanique</li>
+            </ul>
+            
+            <h4 style="margin-top: 15px;" data-i18n="modal.cao2.section.features">Fonctionnalités principales</h4>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+                <li>Modélisation paramétrique de pièces</li>
+                <li>Assemblage avec contraintes</li>
+                <li>Analyse de contraintes mécaniques</li>
+                <li>Étude cinématique</li>
+            </ul>
+            <h4 style="margin-top: 15px;" data-i18n="modal.cao2.section.skills">Compétences acquises</h4>
+            <p style="text-align: justify;" data-i18n="modal.cao2.skills">Ce projet m'a permis de maîtriser les techniques avancées de CAO, l'analyse par éléments finis, la conception pour l'assemblage et la validation virtuelle de conceptions mécaniques.</p>
         
-        <h4 style="margin-top: 15px;">Description du projet</h4>
-        <p style="text-align: justify;">Projet complet de conception mécanique incluant la modélisation 3D de plusieurs pièces, leur assemblage virtuel et l'analyse de contraintes. Le projet simule la conception d'un mécanisme complexe avec vérification de l'assemblage et des interférences.</p>
-        
-        <h4 style="margin-top: 15px;">Outils et Technologies utilisés</h4>
-        <ul style="list-style-type: disc; margin-left: 20px;">
-            <li>SolidWorks (CAO 3D)</li>
-            <li>Module Simulation (analyse statique)</li>
-            <li>Module Motion Study</li>
-        </ul>
-        
-        <h4 style="margin-top: 15px;">Fonctionnalités principales</h4>
-        <ul style="list-style-type: disc; margin-left: 20px;">
-            <li>Modélisation paramétrique de pièces</li>
-            <li>Assemblage avec contraintes</li>
-            <li>Analyse de contraintes mécaniques</li>
-            <li>Étude cinématique</li>
-        </ul>
-        
-        <h4 style="margin-top: 15px;">Compétences acquises</h4>
-        <p style="text-align: justify;">Ce projet m'a permis de maîtriser les techniques avancées de CAO, l'analyse par éléments finis, la conception pour l'assemblage et la validation virtuelle de conceptions mécaniques.</p>
-      </div>
+            <h4 style="margin-top: 15px;" data-i18n="modal.cao2.section.media">Vidéo d'illustration du projet</h4>
+            <div style="text-align: center;">
+                <video width="80%" height="auto" controls>
+                    <source src="videos/vdeo_conception_bielle.mp4" type="video/mp4">
+                    <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
+                </video>
+            </div>
+         </div>
     </div>
         
     <script src="script.js"></script>

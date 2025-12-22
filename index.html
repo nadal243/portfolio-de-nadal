@@ -48,8 +48,8 @@
                     <div class="presentation">
                         <h1 class="mon_nom"><span>Nadal</span> <span>NGAKI</span> <span>MUPATI</span> </h1> 
                         <h3 class="description" data-i18n="desc.intro">Etudiant en deuxième année de licence Sciences pour ingénieur à l'université d'Evry Paris-saclay</h3>
-                        <h3>Futur ingénieur en système embarqué</h3>
-                        <h3>Je suis 
+                        <h3 data-i18n="hero.future">Futur ingénieur en système embarqué</h3>
+                        <h3><span data-i18n="hero.im">Je suis</span>
                             <span class="typed"  style="font-weight: bold;"
                                 data-typed-items="Curieux., Passionné., Autonome., Ambitieux., Étudiant Ingénieur.">
                             </span>
@@ -84,7 +84,7 @@
                             <path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4Z"/>
                         </svg>
                         <strong data-i18n="competence.dev.title">Développement</strong>
-                        <p data-i18n="competence.dev.desc">Python, C / C++, HTML, CSS, JavaScript et PHP</p>
+                        <p data-i18n="competence.dev.desc">Python, C, HTML, CSS, JavaScript et PHP</p>
                     </div>
                     <div class="competence-item" id="competence-item2">
                         <!-- Icône outils -->
@@ -92,7 +92,7 @@
                             <path d="M22 19v2H2v-2l3-2v-6l-3-2v-2h20v2l-3 2v6l3 2Zm-6-8h-4v6h4v-6Z"/>
                         </svg>
                         <strong data-i18n="competence.tools.title">Outils &amp; Technologies</strong>
-                        <p data-i18n="competence.tools.desc">GitHub, Arduino, SolidWorks, VSCode et CodeBlocks</p>
+                        <p data-i18n="competence.tools.desc">GitHub, Arduino, SolidWorks, VSCode, CodeBlocks et Schneider Electric</p>
                     </div>
                     <div class="competence-item" id="competence-item3">
                         <!-- Icône soft skills -->
@@ -127,25 +127,70 @@
             <!-- Parcours scolaire -->
             <section class="timeline" id="parcours">
                 <h3 data-i18n="timeline.education">Educations</h3>
-                <div class="timeline-item" data-i18n="timeline.item1">
-                    <strong>2023 :</strong> Baccalauréat Scientifique – Spécialité Math-Physique avec Mention Bien - Lycée Sadisana
+                <div class="timeline-item">
+                    <strong>2023 :</strong>
+                    <span data-i18n="timeline.item1">Baccalauréat Scientifique – Spécialité Math-Physique avec Mention Bien - Lycée Sadisana</span>
                 </div>
 
-                <div class="timeline-item" data-i18n="timeline.item2">
-                    <strong>2024 – 2027 :</strong>Licence en Sciences pour l’Ingénieur – Université d’Évry Paris-Saclay <br>
-                    <strong>cours principaux :</strong> Mathématiques, Physique, Informatique (C, python, html, JavaScript, CSS, PHP), Électronique, Mécanique, Automatisme, circuit numérique, composants électriques, etc.
+                <div class="timeline-item">
+                    <strong>2024 – 2027 :</strong>
+                    <span data-i18n="timeline.item2">Licence en Sciences pour l’Ingénieur – Université d’Évry Paris-Saclay. Cours principaux : Mathématiques, Physique, Informatique (C, python, html, JavaScript, CSS, PHP), Électronique, Mécanique, Automatisme, circuit numérique, composants électriques, etc.</span>
                 </div>
 
-                <div class="timeline-item" data-i18n="timeline.item3">
-                    <strong>Avril 2026 (prévu) :</strong> Stage ouvrier de 6 à 8 semaines
+                <div class="timeline-item">
+                    <strong data-i18n="timeline.item3.date">Avril 2026 (prévu) :</strong>
+                    <span data-i18n="timeline.item3">Stage ouvrier de 6 à 8 semaines</span>
                 </div>
             </section>
 
             <!-- Certifications -->
             <section class="timeline">
                 <h3 data-i18n="certifications.title">Certifications</h3>
-                <div class="timeline-item" data-i18n="certifications.item1">Python: des fondamentaux aux concepts avancés du langage (2025). <a href="https://openbadgefactory.com/v1/assertion/1e73a324eba5f9083977c6c28a57048961dadb20"><em>cliquez ici</em></a></div>
+                <div class="timeline-item">
+                    <span data-i18n="certifications.item1">Python: des fondamentaux aux concepts avancés du langage (2025).</span>
+                    <a href="https://openbadgefactory.com/v1/assertion/1e73a324eba5f9083977c6c28a57048961dadb20"><em data-i18n="certifications.link">cliquez ici</em></a>
+                </div>
                 <div class="timeline-item" data-i18n="certifications.item2">PIX: Compétences numériques (2025). <em>code verification: P-H3FGR72F</em></div>
+            </section>
+
+            <!--centre d'interet-->
+            <section class="interets">
+                <h3 data-i18n="interests.title">Centres d'intérêt</h3>
+                <div class="competences-list">
+                    <div class="competence-item">
+                        <!-- Icône Taekwondo/Sport de combat -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M19.8 2.2c.4.4.4 1 0 1.4L18 5.4l2.8 2.8c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L16.6 7l-3.5 3.5 4.2 4.2c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L11 11.3 7.4 14.9l2.8 2.8c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L6 16.3l-1.8 1.8c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4L4.6 15l-2.8-2.8c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L6 13.6l3.6-3.6L5.4 5.8c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L11 8.6l3.6-3.6L11.8 2.2c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L16 3.6l1.8-1.8c.4-.4 1-.4 1.4 0z"/>
+                        </svg>
+                        <strong data-i18n="interests.item1">Taekwondo</strong>
+                        <p data-i18n="interests.item1.desc">Sport de combat et discipline</p>
+                    </div>
+                    <div class="competence-item">
+                        <!-- Icône Football -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <!-- Ballon de football stylisé -->
+                            <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2.2 2.3 1.4.8 2.6-1.8 1.9h-2.6L9 8.2l.8-2.6L12 4.2zm-6.1 4L8 7.5l1.3 2.1-.9 2.4-2.3.5-1.4-2.1 1.2-2.2zm12.2 0 1.2 2.2-1.4 2.1-2.3-.5-.9-2.4L16 7.5l2.1.7zM8.3 15.8l-.5-2.4 2.1-.6 1.9 1.6v2.3l-2 .9-1.5-1.8zm7.4 0-1.5 1.8-2-.9v-2.3l1.9-1.6 2.1.6-.5 2.4z"/>
+                        </svg>
+                        <strong data-i18n="interests.item2">Football</strong>
+                        <p data-i18n="interests.item2.desc">Esprit d'équipe et passion</p>
+                    </div>
+                    <div class="competence-item">
+                        <!-- Icône Lecture -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/>
+                        </svg>
+                        <strong data-i18n="interests.item3">Lecture</strong>
+                        <p data-i18n="interests.item3.desc">Culture et apprentissage continu</p>
+                    </div>
+                    <div class="competence-item">
+                        <!-- Icône Programmation -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                        <strong data-i18n="interests.item4">Programmation</strong>
+                        <p data-i18n="interests.item4.desc">Projets personnels et créativité</p>
+                    </div>
+                </div>
             </section>
 
             <!-- Pourquoi moi -->
@@ -170,26 +215,26 @@
            <div class="footer-content">
                 
                 <div class="footer-items">
-                    <p>Réseaux</p>
+                    <p data-i18n="footer.networks">Réseaux</p>
                     <a href="https://github.com/nadal243/PROJET---Programmation-informatique" target="_blank" title="GitHub">GitHub</a>
                     <a href="https://www.linkedin.com/in/nadal-ngaki-mupati-998344322/" target="_blank" title="LinkedIn">LinkedIn</a>
                 </div>
                 <div class="footer-items">
-                    <p>Adresse</p>
+                    <p data-i18n="footer.address">Adresse</p>
                     <p>91360 Epinay sur orge, France</p>
                 </div>
 
                 <div class="footer-items">
-                    <p>Email</p>
+                    <p data-i18n="footer.email">Email</p>
                     <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
                 </div>
                 <div class="footer-items">
-                    <p>Téléphone</p>
+                    <p data-i18n="footer.phone">Téléphone</p>
                     <p>+33 766932319</p>
                 </div>
 
            </div>
-           <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
+           <center><p data-i18n="footer.copyright">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
         </footer>
     </div>
 </body>
