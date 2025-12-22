@@ -54,7 +54,7 @@ const TRANSLATIONS = {
         // Certifications (index)
         'certifications.title': 'Certifications',
         'certifications.item1': 'Python: des fondamentaux aux concepts avancés du langage (2025).',
-        'certifications.item2': 'PIX: Compétences numériques (2025). code verification: P-H3FGR72F',
+        'certifications.item2': 'PIX: Compétences numériques (2025). code de vérification : P-H3FGR72F',
         'certifications.link': 'cliquez ici',
 
         // Centres d’intérêt (index)
