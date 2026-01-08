@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Portfolio de Nadal NGAKI MUPATI, étudiant sciences pour l'ingénieur" name="description">
     <meta name="keywords" content="étudiant, ingénieur, sciences pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
-    <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
     <meta name="author" content="Nadal NGAKI MUPATI">
     <title>Portfolio de Nadal NGAKI MUPATI</title>
     <link rel="stylesheet" href="site_web.css">
@@ -16,11 +15,12 @@
 
 </head>
 <body>
-    <!--la page en intégralité-->
+    <!-- Conteneur général de la page d'accueil -->
     <div class="integralite">
-        <!--en tete de la page-->
+        <!-- En-tête : menu de navigation + boutons langue/thème -->
         <header>
             <div style="display:flex; gap:16px; align-items: center;">
+               <!-- Menu principal du site (navigation entre les pages) -->
                <nav>
                     <ul class="menu">
                         <li><a href="index.html" data-i18n="nav.presentation">Présentation</a></li>
@@ -32,18 +32,18 @@
                </nav> 
             </div>
 
-            
-
-                <div class="langs">
+                            <!-- Choix de langue (FR/EN) + bouton de thème sombre/clair -->
+                            <div class="langs">
                     <button id="ln-fr" title="FR">FR</button>
                     <button id="ln-en" title="EN">EN</button>
                     <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
                 </div>
         </header>
 
-        <!--le contenu ou le corps de la page-->
+        <!-- Contenu principal de la page d'accueil -->
         <main class="corps">
             <div class="arriere_plan">
+                <!-- Bloc de présentation (nom, description, texte animé) -->
                 <div class="intro-section">
                     <div class="presentation">
                         <h1 class="mon_nom"><span>Nadal</span> <span>NGAKI</span> <span>MUPATI</span> </h1> 
@@ -57,16 +57,19 @@
                         <p class="objectif" data-i18n="objectif.intro">Je suis en recherche d'un stage ouvrier de 6 à 8 semaines entre avril et mai 2026</p>
                     </div>
                     
+                    <!-- Photo de profil à droite de la présentation -->
                     <div class="photo-profil">
                         <img src="images/photo_profil.JPG" alt="Photo de profil">
                     </div>
                 </div>
+                <!-- Bouton pour ouvrir la page du CV -->
                 <div style="text-align: center; margin-top: 50px;"> 
                     <a href="cv.html" class="btn-cv">
                         <i class="fas fa-file-lines"></i> 
                         <span data-i18n="cv.view-text">Voir mon CV</span>
                     </a>
                 </div>
+                <!-- Section "À propos" : texte de présentation plus détaillé -->
                 <div class="a_propos">
                     <h3 data-i18n="about.title">À propos</h3>
                     <p data-i18n="about.desc">Je suis passionné par les domaines de l’électronique, de l’automatisme et de la programmation embarquée. J’ai acquis des compétences solides en programmation (Python, C/C++, HTML, CSS, JavaScript, PHP) ainsi qu’en utilisation d’outils tels que GitHub, Arduino et SolidWorks.
@@ -234,7 +237,7 @@
                 </div>
 
            </div>
-           <center><p data-i18n="footer.copyright">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
+           <p style="text-align: center;" data-i18n="footer.copyright">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p>
         </footer>
     </div>
 </body>

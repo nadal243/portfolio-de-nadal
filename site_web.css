@@ -1,5 +1,5 @@
 
-/* MOBILE - Extra small devices (max 480px) */
+/* MOBILE - Très petits écrans (smartphones, max 480px) */
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -143,7 +143,7 @@
   }
 }
 
-/* SMALL - Small devices (481px to 768px) */
+/* SMALL - Petits écrans (smartphones larges / petites tablettes) */
 @media (max-width: 768px) and (min-width: 481px) {
   header {
     flex-wrap: wrap;
@@ -203,7 +203,7 @@
   }
 }
 
-/* TABLET - Medium devices (769px to 1024px) */
+/* TABLET - Tablettes et écrans moyens (769px à 1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
   .competences-list {
     gap: 1.5em;
@@ -239,7 +239,7 @@
   }
 }
 
-/* DESKTOP - Large devices (1025px+) */
+/* DESKTOP - Grands écrans (1025px et plus) */
 @media (min-width: 1025px) {
   .competences-list {
     gap: 1.5em;
@@ -285,7 +285,7 @@ body {
     background: #f9f9f9;
     color: #333;
 }
-/* Smooth theme transition */
+/* Transition douce lors du changement de thème (clair/sombre) */
 * {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
@@ -316,6 +316,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+/* Zone de présentation des boutons de langue et du thème dans l'en-tête */
 /* ========================================
    CONTENEUR GLOBAL ET SECTION INTRO
    ======================================== */
@@ -358,7 +359,7 @@ nav a:hover {
 /* ========================================
    BOUTON CV ET APERCU HERO
    ======================================== */
-/* Style général pour le bouton CV */
+/* Style général pour le bouton CV (lien vers la page du CV) */
 .btn-cv {
     display: inline-flex; /* Alignement de l'icône et du texte */
     align-items: center;
@@ -410,7 +411,7 @@ nav a:hover {
 /* ========================================
    SECTION COMPÉTENCES (APERÇU ACCUEIL)
    ======================================== */
-/* Nouvelle section compétences */
+/* Section compétences sur la page d'accueil (résumé) */
 .competences {
     margin-bottom: 2em;
 }
@@ -447,7 +448,7 @@ nav a:hover {
 /* ========================================
   SECTION PROJETS (APERÇU ACCUEIL)
   ======================================== */
-/* Projects styles */
+/* Styles des cartes projets (page projets.html) */
 .projects-grid {
   display: grid;
   /* Garde des cartes à largeur plafonnée même quand il reste peu d'éléments */
@@ -581,7 +582,7 @@ nav a:hover {
 /* ========================================
   PROJETS - APERÇU / LISTE
   ======================================== */
-/* Projets aperçu */
+/* Aperçu des projets (bloc de la page d'accueil) */
 .projets-apercu {
     margin-bottom: 3em;
 }
@@ -628,7 +629,7 @@ nav a:hover {
 /* ========================================
   PIED DE PAGE
   ======================================== */
-/* Pied de page ou footer*/
+/* Pied de page global (présent sur toutes les pages) */
 footer {
     background: #5884b1;
     color: white;
@@ -647,14 +648,28 @@ footer {
 .footer-items {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+  align-items: flex-start;
+}
+
+.footer-items p {
+  margin: 0.2em 0;
+}
+
+.footer-items p:first-child {
+  margin-bottom: 0.4em; 
+  font-weight: bold;
+}
+
+.footer-items a {
+  display: block;
+  margin: 0.2em 0;
 }
 
 
 /* ========================================
   FORMULAIRE DE CONTACT
   ======================================== */
-/* Formulaire de contact */
+/* Formulaire de contact (page contact.html) */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -687,17 +702,10 @@ h2 {
     margin-bottom: 10px;
 }
 
-
-/* ========================================
-  RUBRIQUE CENTRE D'INTÉRÊT (HORIZONTAL SCROLL)
-  ======================================== */
-/*rubrqiue centre d'interet*/
-
-
 /* ========================================
   PAGE COMPÉTENCES (GRILLE DÉTAILLÉE)
   ======================================== */
-/*Rubrique compétences */
+/* Rubrique compétences détaillée (page competence.html) */
 
 .skills{
   margin: 0 auto 40px;
@@ -741,16 +749,9 @@ h2 {
 
 
 /* ========================================
-  CARTES CENTRES D'INTÉRÊT (GRILLE)
-  ======================================== */
-/*Rubrique centre d'intérêt*/
-
-
-
-/* ========================================
   MODE SOMBRE (OVERRIDES)
   ======================================== */
-/* THEME - dark mode overrides */
+/* THEME - Surcharges pour le mode sombre */
 .dark body {
   /* Fond général sombre derrière le conteneur principal */
   color: #e2e8f0;
@@ -863,7 +864,7 @@ h2 {
   color: #ffffff;
 }
 
-/* theme toggle button */
+/* Bouton qui permet d'activer/désactiver le mode sombre */
 #theme-toggle {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.12);
@@ -924,11 +925,6 @@ h2 {
     cursor: pointer;
 }
 
-/* Animation d'apparition (optionnel, mais agréable) */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
 
 
 

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Portfolio de Nadal NGAKI MUPATI, étudiant sciences pour l'ingénieur" name="description">
     <meta name="keywords" content="étudiant, ingénieur, sciences pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
-    <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
     <meta name="author" content="Nadal NGAKI MUPATI">
     <title>Portfolio de Nadal NGAKI MUPATI</title>
     <link rel="stylesheet" href="site_web.css">
@@ -13,6 +12,7 @@
     <script src="site_web.js" defer></script> 
   </head>
   <body>
+    <!-- Page listant l'ensemble de mes compétences -->
     <div class="integralite">
       <header>
         <div style="display:flex; gap:16px; align-items: center;">
@@ -33,6 +33,7 @@
           <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
         </div>
       </header>
+      <!-- Contenu principal : blocs de compétences -->
       <main class="skills">
         <div class="portfolio-header">
           <h1  data-i18n="competence.title">Mes compétences</h1>
@@ -44,6 +45,7 @@
           </p>
         </div>
         
+        <!-- Bloc des compétences techniques (langages, outils) -->
         <h2 data-i18n="competence.tech.title" style="text-align: center;">Mes compétences techniques</h2>
         <section class="grid">
             <article class="card" onclick="openModal('modal-python')" style="cursor: pointer;">
@@ -119,6 +121,7 @@
             </article>
         </section>
 
+        <!-- Bloc des compétences transversales (bureautique, LaTeX, etc.) -->
         <h2 data-i18n="competence.transversal.title" style="text-align: center;">Mes compétences transversales</h2>
 
         <section class="grid">
@@ -155,6 +158,7 @@
             </article>
         </section>
 
+        <!-- Bloc des compétences linguistiques -->
         <h2 data-i18n="competence.languages.title" style="text-align: center;">Mes compétences linguistiques</h2>
 
         <section class="grid">
@@ -183,6 +187,7 @@
             </article>
         </section>
 
+        <!-- Bloc des qualités humaines (soft skills) -->
         <h2 data-i18n="competence.human.title" style="text-align: center;">Mes qualités humaines</h2>
 
         <section class="grid">
@@ -229,6 +234,7 @@
 
       </main>
 
+      <!-- Pied de page commun à tout le site -->
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-items">
@@ -250,11 +256,11 @@
             <p>+33 766932319</p>
           </div>
         </div>
-        <center><p data-i18n="footer.copyright">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center>
+        <p style="text-align: center;" data-i18n="footer.copyright">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p>
       </footer>
     </div>
     
-
+    <!-- Modales détaillées pour chaque compétence -->
     <div id="modal-python" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-python')">&times;</span>
@@ -278,7 +284,7 @@
         </ul>
         <h4 style="margin-top: 15px;" data-i18n="modal.python.section.cert">Certification</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
-            <li><a href="https://openbadgefactory.com/v1/assertion/1e73a324eba5f9083977c6c28a57048961dadb20" data-i18n="modal.python.cert.link">Python : des fondamentaux aux concepts avancés du langage</a></li>
+            <li><a href="https://openbadgefactory.com/v1/assertion/1e73a324eba5f9083977c6c28a57048961dadb20" data-i18n="modal.python.cert.link">Python : des fondamentaux aux concepts avancés du langage</a></li></ul>
       </div>
     </div>
 
@@ -300,7 +306,7 @@
         </ul>
         <h4 style="margin-top: 15px;" data-i18n="modal.c.section.projects">Projets réalisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
-            <li>Quelques travaux pratiques universitaires</li>
+            <li>Quelques travaux pratiques universitaires</li></ul> 
       </div>
     </div>
 

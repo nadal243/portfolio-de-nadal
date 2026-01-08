@@ -5,21 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Portfolio de Nadal NGAKI MUPATI, étudiant sciences pour l'ingénieur" name="description">
     <meta name="keywords" content="étudiant, ingénieur, sciences pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
-        <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
-        <meta name="author" content="Nadal NGAKI MUPATI">
-        <title>Portfolio de Nadal NGAKI MUPATI</title>
-        <link rel="stylesheet" href="site_web.css"> 
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <script src="site_web.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <meta name="author" content="Nadal NGAKI MUPATI">
+    <title>Portfolio de Nadal NGAKI MUPATI</title>
+    <link rel="stylesheet" href="site_web.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="site_web.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
         
         
     </head>
     <body>
+    <!-- Page listant mes projets avec filtres, grille et modales détaillées -->
     <div class="integralite">
         <header>
+            <!-- Barre du haut : logo/menu + boutons langue/thème -->
             <div style="display:flex; gap:16px; align-items: center;">
+                <!-- Navigation principale réutilisée sur toutes les pages -->
                 <nav>
                     <ul class="menu">
                         <li><a href="index.html" data-i18n="nav.presentation">Présentation</a></li>
@@ -33,125 +35,145 @@
 
             
 
-                <div class="langs">
-                    <button id="ln-fr" title="FR">FR</button>
-                    <button id="ln-en" title="EN">EN</button>
-                    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
-                </div>
+            <!-- Sélecteurs de langue + bouton thème sombre/clair -->
+            <div class="langs">
+                <button id="ln-fr" title="FR">FR</button>
+                <button id="ln-en" title="EN">EN</button>
+                <button id="theme-toggle" title="Toggle theme" aria-label="Toggle dark or light mode">🌙</button>
+            </div>
         </header>
+        <!-- Contenu principal : filtres et grille de projets -->
         <main class="corps">
-        <div class="site-container"> 
+            <div class="site-container"> 
+                <div class="portfolio-container">
+                    <!-- En-tête de la page projets : titre + sous-titre -->
+                    <div class="portfolio-header">
+                        <h1 data-i18n="projects.page.title">Mes Projets</h1>
+                        <p data-i18n="projects.page.subtitle">Découvrez mes réalisations en développement, automatisme, CAO et systèmes embarqués (n'hésite pas à explorer mes projets en cliquant dessus)</p>
+                    </div>
 
-            <div class="portfolio-container">
-                <div class="portfolio-header">
-                    <h1 data-i18n="projects.page.title">Mes Projets</h1>
-                    <p data-i18n="projects.page.subtitle">Découvrez mes réalisations en développement, automatisme, CAO et systèmes embarqués (n'hésite pas à explorer mes projets en cliquant dessus)</p>
-                </div>
+                    <!-- Boutons de filtre par catégorie de projet (utilisés par le JS) -->
+                    <div class="filters-container">
+                        <button class="filter-btn active" data-category="all">
+                            <i class="fas fa-grip-horizontal"></i> <span data-i18n="projects.filter.all">Tous les projets</span>
+                        </button>
+                        
+                        <button class="filter-btn" data-category="Automatisme">
+                            <i class="fas fa-cogs"></i> <span data-i18n="projects.filter.automatisme">Automatisme</span>
+                        </button>
+                        <button class="filter-btn" data-category="CAO">
+                            <i class="fas fa-drafting-compass"></i> <span data-i18n="projects.filter.cao">CAO</span>
+                        </button>
+                        <button class="filter-btn" data-category="Électronique">
+                            <i class="fas fa-microchip"></i> <span data-i18n="projects.filter.elec">Électronique</span>
+                        </button>
+                        <button class="filter-btn" data-category="Programmation">
+                            <i class="fab fa-python"></i> <span data-i18n="projects.filter.prog">Programmation</span>
+                        </button>
+                    </div>
 
-                <div class="filters-container">
-                    <button class="filter-btn active" data-category="all">
-                        <i class="fas fa-grip-horizontal"></i> <span data-i18n="projects.filter.all">Tous les projets</span>
-                    </button>
-                    
-                    <button class="filter-btn" data-category="Automatisme">
-                        <i class="fas fa-cogs"></i> <span data-i18n="projects.filter.automatisme">Automatisme</span>
-                    </button>
-                    <button class="filter-btn" data-category="CAO">
-                        <i class="fas fa-drafting-compass"></i> <span data-i18n="projects.filter.cao">CAO</span>
-                    </button>
-                    <button class="filter-btn" data-category="Électronique">
-                        <i class="fas fa-microchip"></i> <span data-i18n="projects.filter.elec">Électronique</span>
-                    </button>
-                    <button class="filter-btn" data-category="Programmation">
-                        <i class="fab fa-python"></i> <span data-i18n="projects.filter.prog">Programmation</span>
-                    </button>
-                </div>
+                    <!-- Compteur dynamique du nombre de projets visibles -->
+                    <p class="project-count"><span id="count">8</span> <span data-i18n="projects.count.label">projets trouvés</span></p>
 
-                <p class="project-count"><span id="count">8</span> <span data-i18n="projects.count.label">projets trouvés</span></p>
-
-                <div class="projects-grid" id="projects-grid">
-                    <div class="project-item" data-category="Automatisme" onclick="openModal('modal-automatisme1')" style="cursor: pointer;">
-                        <img src="images/feu_tricolore.jpg" alt="photo automatisme" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.traffic">Système automatique des feux tricolores</div>
-                        <div class="tag" data-i18n="projects.tag.automatisme">Automatisme</div>
-                    </div>
-                    <div class="project-item" data-category="CAO" onclick="openModal('modal-cao1')" style="cursor: pointer;">
-                        <img src="images/CAO.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.cao1">Conception 3D avec SolidWorks</div>
-                        <div class="tag" data-i18n="projects.tag.cao">CAO</div>
-                    </div>
-                    <div class="project-item" data-category="Électronique" onclick="openModal('modal-electronique1')" style="cursor: pointer;">
-                        <img src="images/afficheur.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.display7seg">Afficheur 7 segments</div>
-                        <div class="tag" data-i18n="projects.tag.elec">Électronique</div>
-                    </div>
-                    <div class="project-item" data-category="Automatisme" onclick="openModal('modal-automatisme2')" style="cursor: pointer;">
-                        <img src="images/ascenseur.jpg" alt="photo automatisme" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.elevator">Système de gestion d'un ascenseur</div>  
-                        <div class="tag" data-i18n="projects.tag.automatisme">Automatisme</div>
-                    </div>
-                    
-                    <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation1')" style="cursor: pointer;">
-                       <img src="images/photo_python.jpg" alt="photo python" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.atm">Simulateur d'un distributeur bancaire</div>
-                        <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
-                    </div>
-                    <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation2')" style="cursor: pointer;">
-                       <img src="images/photo_python.jpg" alt="photo python" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.game">Programmation d'un mini jeu vidéo</div>
-                        <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
-                    </div>
-                    <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation3')" style="cursor: pointer;">
-                       <img src="images/photo_C.jpg" alt="photo C" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.tp">Travaux pratiques universitaires</div>
-                        <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
-                    </div>
-                    <div class="project-item" data-category="CAO" onclick="openModal('modal-cao2')" style="cursor: pointer;">
-                        <img src="images/CAO.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
-                        <div class="muted" data-i18n="projects.card.cao2">Conception 3D et assemblage mécanique avec SolidWorks</div>
-                        <div class="tag" data-i18n="projects.tag.cao">CAO</div>
+                    <!-- Grille de cartes projet cliquables (ouvrent une modale au clic) -->
+                    <div class="projects-grid" id="projects-grid">
+                        <!-- Carte projet : système des feux tricolores (catégorie Automatisme) -->
+                        <div class="project-item" data-category="Automatisme" onclick="openModal('modal-automatisme1')" style="cursor: pointer;">
+                            <img src="images/feu_tricolore.jpg" alt="photo automatisme" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.traffic">Système automatique des feux tricolores</div>
+                            <div class="tag" data-i18n="projects.tag.automatisme">Automatisme</div>
+                        </div>
+                        <!-- Carte projet : conception 3D (catégorie CAO) -->
+                        <div class="project-item" data-category="CAO" onclick="openModal('modal-cao1')" style="cursor: pointer;">
+                            <img src="images/CAO.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.cao1">Conception 3D avec SolidWorks</div>
+                            <div class="tag" data-i18n="projects.tag.cao">CAO</div>
+                        </div>
+                        <!-- Carte projet : afficheur 7 segments (catégorie Électronique) -->
+                        <div class="project-item" data-category="Électronique" onclick="openModal('modal-electronique1')" style="cursor: pointer;">
+                            <img src="images/afficheur.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.display7seg">Afficheur 7 segments</div>
+                            <div class="tag" data-i18n="projects.tag.elec">Électronique</div>
+                        </div>
+                        <!-- Carte projet : gestion d'ascenseur (catégorie Automatisme) -->
+                        <div class="project-item" data-category="Automatisme" onclick="openModal('modal-automatisme2')" style="cursor: pointer;">
+                            <img src="images/ascenseur.jpg" alt="photo automatisme" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.elevator">Système de gestion d'un ascenseur</div>  
+                            <div class="tag" data-i18n="projects.tag.automatisme">Automatisme</div>
+                        </div>
+                        
+                        <!-- Carte projet : simulateur DAB (catégorie Programmation) -->
+                        <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation1')" style="cursor: pointer;">
+                        <img src="images/photo_python.jpg" alt="photo python" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.atm">Simulateur d'un distributeur bancaire</div>
+                            <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
+                        </div>
+                        <!-- Carte projet : mini jeu vidéo (catégorie Programmation) -->
+                        <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation2')" style="cursor: pointer;">
+                        <img src="images/photo_python.jpg" alt="photo python" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.game">Programmation d'un mini jeu vidéo</div>
+                            <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
+                        </div>
+                        <!-- Carte projet : TP universitaires en C (catégorie Programmation) -->
+                        <div class="project-item" data-category="Programmation" onclick="openModal('modal-programmation3')" style="cursor: pointer;">
+                        <img src="images/photo_C.jpg" alt="photo C" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.tp">Travaux pratiques universitaires</div>
+                            <div class="tag" data-i18n="projects.tag.prog">Programmation</div>
+                        </div>
+                        <!-- Carte projet : autre projet CAO avec assemblage -->
+                        <div class="project-item" data-category="CAO" onclick="openModal('modal-cao2')" style="cursor: pointer;">
+                            <img src="images/CAO.jpg" alt="conception 3D" style="width: 100%; height: 60%; object-fit: cover; border-radius: 4px;">
+                            <div class="muted" data-i18n="projects.card.cao2">Conception 3D et assemblage mécanique avec SolidWorks</div>
+                            <div class="tag" data-i18n="projects.tag.cao">CAO</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <footer class="footer">
-                <div class="footer-content">
-                    
-                    <div class="footer-items">
-                        <p>Réseaux</p>
-                        <a href="https://github.com/nadal243/PROJET---Programmation-informatique" target="_blank" title="GitHub">GitHub</a>
-                        <a href="https://www.linkedin.com/in/nadal-ngaki-mupati-998344322/" target="_blank" title="LinkedIn">LinkedIn</a>
-                    </div>
-                    <div class="footer-items">
-                        <p>Adresse</p>
-                        <p>91360 Epinay sur orge, France</p>
-                    </div>
-
-                    <div class="footer-items">
-                        <p>Email</p>
-                        <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
-                    </div>
-                    <div class="footer-items">
-                        <p>Téléphone</p>
-                        <p>+33 766932319</p>
-                    </div>
-
-                </div>
-                <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
-            </footer>
         </main>
+
+            <!-- Pied de page avec coordonnées et réseaux -->
+        <footer class="footer">
+            <div class="footer-content">
+                
+                <div class="footer-items">
+                    <p>Réseaux</p>
+                    <a href="https://github.com/nadal243/PROJET---Programmation-informatique" target="_blank" title="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nadal-ngaki-mupati-998344322/" target="_blank" title="LinkedIn">LinkedIn</a>
+                </div>
+                <div class="footer-items">
+                    <p>Adresse</p>
+                    <p>91360 Epinay sur orge, France</p>
+                </div>
+
+                <div class="footer-items">
+                    <p>Email</p>
+                    <a href="mailto:nadalngaki@gmail.com">nadalngaki@gmail.com</a>
+                </div>
+                <div class="footer-items">
+                    <p>Téléphone</p>
+                    <p>+33 766932319</p>
+                </div>
+
+            </div>
+            <p style="text-align: center;">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p>
+        </footer>
+       
     </div>
     
-
+        <!-- Modales descriptives pour chaque projet (détails affichés au clic) -->
     <div id="modal-automatisme1" class="modal">
       <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-automatisme1')">&times;</span>
+                <!-- Bouton de fermeture de la modale -->
+                <span class="close-btn" onclick="closeModal('modal-automatisme1')">&times;</span>
+                <!-- Titre et catégorie du projet -->
                 <h2 style="color: #004080;" data-i18n="modal.automatisme1.title">Système automatique des feux tricolores</h2>
                 <p><strong data-i18n="modal.automatisme1.category.label">Catégorie :</strong> <span data-i18n="modal.automatisme1.category.value">Automatisme</span></p>
         
+                <!-- Bloc : description générale du projet -->
                 <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.desc">Description du projet</h4>
                 <p style="text-align: justify;" data-i18n="modal.automatisme1.desc">c'est un projet qui consiste à l'elaboration d'un grafcet qui permet de gérer automatiquement les séquences des feux tricolores de plusieurs voies.</p>
         
+                <!-- Bloc : liste des outils utilisés -->
                 <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.tools">Outils et Technologies utilisés</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Grafcet niveau 2</li>
@@ -160,6 +182,7 @@
             <li>Actionneurs</li>
         </ul>
         
+        <!-- Bloc : principales fonctionnalités du système -->
         <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.features">Fonctionnalités principales</h4>
         <ul style="list-style-type: disc; margin-left: 20px;">
             <li>Séquence automatique des feux avec temporisation</li>
@@ -168,6 +191,7 @@
             <li>Schneider Electric</li>
         </ul>
         
+        <!-- Bloc : compétences développées grâce à ce projet -->
         <h4 style="margin-top: 15px;" data-i18n="modal.automatisme1.section.skills">Compétences acquises</h4>
         <p style="text-align: justify;" data-i18n="modal.automatisme1.skills">Ce projet m'a permis de developper des compétences en élaboration de GRAFCET, la gestion de la temporisation, programmation d'un automate programmable et en conception de systèmes automatisés.</p>
       </div>
@@ -270,7 +294,7 @@
         <p style="text-align: justify;" data-i18n="modal.automatisme2.skills">Ce projet m'a permis de développer des compétences en automatisme industriel, programmation d'automates, conception de systèmes de contrôle et gestion de la sécurité dans les systèmes automatisés.</p>
         <h4 style="margin-top: 15px;" data-i18n="modal.automatisme2.section.media">Vidéo d'illustration du projet</h4>
         <div style="text-align: center;">
-            <video width="80%" height="auto" controls>
+            <video style="width: 80%; height: auto;" controls>
                 <source src="videos/video_ascenseur.mp4" type="video/mp4">
                 <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
             </video>
@@ -308,7 +332,7 @@
         <h4 style="margin-top: 15px;" data-i18n="modal.prog1.section.media">Photo et vidéo d'illustration du projet</h4>
         <div style="text-align: center; margin-bottom: 15px;">
             <img src="images/simulateur_banque.jpg" alt="Capture d'écran du simulateur DAB" style="width: 80%; height: auto; margin-bottom: 10px; border-radius: 4px;">
-            <video width="80%" height="auto" controls>
+            <video style="width: 80%; height: auto;" controls>
                 <source src="videos/simulateur_banque.mp4" type="video/mp4">
                 <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
             </video>
@@ -352,7 +376,7 @@
         <h4 style="margin-top: 15px;" data-i18n="modal.prog2.section.media">Photo et video d'illustration du projet</h4>
         <div style="text-align: center; margin-bottom: 15px;">
             <img src="images/jeu_eco_guerrier.jpg" alt="Capture d'écran du jeu vidéo" style="width: 80%; height: auto; margin-bottom: 10px; border-radius: 4px;">
-            <video width="80%" height="auto" controls>
+            <video style="width: 80%; height: auto;" controls>
                 <source src="videos/jeu_eco-guerrier.mp4" type="video/mp4">
                 <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
             </video>
@@ -425,7 +449,7 @@
         
             <h4 style="margin-top: 15px;" data-i18n="modal.cao2.section.media">Vidéo d'illustration du projet</h4>
             <div style="text-align: center;">
-                <video width="80%" height="auto" controls>
+                <video style="width: 80%; height: auto;" controls>
                     <source src="videos/vdeo_conception_bielle.mp4" type="video/mp4">
                     <span data-i18n="modal.video.unsupported">Votre navigateur ne supporte pas la lecture de vidéos.</span>
                 </video>

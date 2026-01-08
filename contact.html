@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content="Portfolio de Nadal NGAKI MUPATI, etudiant sciences pour l'ingénieur" name="description">
         <meta name="keywords" content =  "étudiant, ingénieur, scinces pour l'ingénieur, mécanique, électronique, informatique, développement, Nadal NGAKI MUPATI">
-        <meta name="description" content="Mon Portfolio Nadal NGAKI MUPATI -- Etudiant en sciences pour ingénieur">
         <meta name="author" content="Nadal NGAKI MUPATI">
         <title>Portfolio de Nadal NGAKI MUPATI</title>
         <link rel="stylesheet" href="site_web.css">
         <script src="site_web.js" defer></script>
     </head>
     <body>
-        <!--la page en intégralité-->
+        <!-- Page de contact avec formulaire d'envoi -->
         <div class="integralite">
             <!--en tete de la page-->
             <header>
@@ -37,11 +36,12 @@
 
             <!--le contenu ou le corps de la page-->
             <main>
-                <!--formulaire de contact-->
-                <center><h1 data-i18n="contact.title">Formulaire de contact</h1></center>
-                <center><p><em data-i18n="contact.subtitle">N'hésitez pas à me contacter via ce formulaire.</em></p></center>
+                <!-- Formulaire de contact envoyé via Formspree -->
+                <h1 style="text-align: center;" data-i18n="contact.title">Formulaire de contact</h1>
+                <p style="text-align: center;"><em data-i18n="contact.subtitle">N'hésitez pas à me contacter via ce formulaire.</em></p>
                 <section>
-                    <form id="contact-form" action="https://formspree.io/f/mrezbovr" method="POST">  <!--permettant d'envoyer les données du formulaire sans utiliser du PHP-->
+                     <!--permettant d'envoyer les données du formulaire sans utiliser du PHP, etant donné que mon site web est hebergé sur GitHub Pages-->
+                    <form id="contact-form" action="https://formspree.io/f/mrezbovr" method="POST"> 
                         <label for="nom" data-i18n="contact.nom">Nom *</label>
                         <input type="text" id="nom" name="nom" required>
 
@@ -53,6 +53,7 @@
 
                         <label for="objet" data-i18n="contact.objet">Objet du contact *</label>
                         <select id="objet" name="objet" required>
+                            <!--les différents objets de contact possibles-->
                             <option value="" data-i18n="contact.objet.placeholder">-- Sélectionnez un objet --</option>
                             <option value="Alternance">Alternance</option>
                             <option value="Stage">Stage</option>
@@ -80,6 +81,7 @@
 
                         <label for="pays" data-i18n="contact.pays">Pays *</label>
                         <select id="pays" name="pays" required>
+                            <!--les différents pays possibles-->
                             <option value="" data-i18n="contact.pays.placeholder">-- Sélectionnez un pays --</option>
                             <option value="France">France</option>
                             <option value="Belgique">Belgique</option>
@@ -99,6 +101,7 @@
 
                         <label for="region" data-i18n="contact.region">Région (si France)</label>
                         <select id="region" name="region">
+                            <!--les différentes régions de France-->
                             <option value="" data-i18n="contact.region.placeholder">-- Sélectionnez une région --</option>
                             <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
                             <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
@@ -122,6 +125,7 @@
 
                         <label for="departement" data-i18n="contact.departement">Département (si France)</label>
                         <select id="departement" name="departement">
+                            <!--les différents départements de France-->
                             <option value="" data-i18n="contact.departement.placeholder">-- Sélectionnez un département --</option>
                             <option value="01">01 - Ain</option>
                             <option value="02">02 - Aisne</option>
@@ -228,7 +232,7 @@
 
                         <label for="message" data-i18n="contact.message">Message *</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
-
+                        <!--bouton d'envoi du formulaire-->
                         <button type="submit" data-i18n="contact.submit">Envoyer</button>
                     </form>
                     <div id="form-reponse"></div>
@@ -261,7 +265,7 @@
                     </div>
 
                 </div>
-                <center><p>&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p></center> 
+                <p style="text-align: center;">&copy; 2025 Nadal NGAKI MUPATI. Tous droits reservés.</p>
             </footer>
     </div>
 </html>
